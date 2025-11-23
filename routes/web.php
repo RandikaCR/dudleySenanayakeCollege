@@ -3,8 +3,23 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+//FRONTEND CONTROLLERS
+use App\Http\Controllers\Frontend\FrontendController AS Frontend;
+
+//1 - Frontend Routes
+Route::group([ 'prefix' =>'/'], function () {
+
+    Route::get('/', [Frontend::class, 'index'])->name('frontend.homepage');
+
+    /*Route::get('/set-localization/{lang}', [Frontend::class, 'localization'])->name('frontend.localization');
+
+
+    Route::get('/sign-in', [FrontendAuth::class, 'signIn'])->name('frontend.auth.signIn');
+    Route::post('/sign-in/create', [FrontendAuth::class, 'login'])->name('frontend.auth.login');
+    Route::post('/sign-up/create', [FrontendAuth::class, 'store'])->name('frontend.auth.store');
+    Route::post('/app-logout', [FrontendAuth::class, 'appLogout'])->name('frontend.auth.appLogout');*/
+
+
 });
 
 Route::get('/dashboard', function () {
