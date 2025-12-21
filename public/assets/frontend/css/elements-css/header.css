@@ -281,7 +281,7 @@
     transform: scaleX(0);
     transform-origin: left;
     transition: .5s;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 .main-menu .navigation > li.current > a:before,
 .main-menu .navigation > li:hover > a:before{
