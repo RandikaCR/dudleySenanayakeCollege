@@ -56,7 +56,7 @@
         <div class="container">
             <div class="section_title_one centred mb_60">
                 <h5>How our services</h5>
-                <h2>Why Choose Liggeet</h2>
+                <h2>Why Choose Liggeet {{ __('main.next') }}</h2>
             </div>
             <div class="row">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">

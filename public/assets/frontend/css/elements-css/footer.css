@@ -3,7 +3,7 @@
 /* Footer Style One */
 .main_footer{
     position: relative;
-    padding: 100px 0px; 
+    padding: 100px 0px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
     font-family: var(--manrope);
 }
 .footer_widget ul li a:hover{
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 /* End Footer Middle */
 

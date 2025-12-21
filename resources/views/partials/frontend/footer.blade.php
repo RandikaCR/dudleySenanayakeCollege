@@ -6,13 +6,17 @@
                     <div class="footer_widget about_widget">
                         <div class="footer_logo">
                             <figure>
-                                <a href="index.html"><img src="{{ asset('assets/frontend/images/footer-logo.svg') }}" alt=""></a>
+                                <a href="index.html"><img src="{{ asset('assets/common/images/footer-logo.png') }}" alt=""></a>
                             </figure>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-                        <h5>United States</h5>
-                        <p>141, First Fl  oor, 12 St Roots Terrace, Los Angeles 90010. <br>Front Desk: +(406) 555-0120</p>
-                        <div class="footer_link_btn"><a href="about.html">Our All Branches</a></div>
+                        <p>
+                        <ul class="quick_links_list">
+                            <li><a href="javascript:void(0);"><i class="flaticon-pin-1 me-2"></i>Dudley Senanayake College<br><span class="ms-4">Park Road</span><br><span class="ms-4">Colombo 05</span><br><span class="ms-4">00500</span></a></li>
+                            <li><a href="mailto:info@dudleysenanayakecollege.lk"><i class="flaticon-email-1 me-2"></i> info@dudleysenanayakecollege.lk</a></li>
+                            <li><a href="tel:+94112589558"><i class="fa fa-phone me-2"></i>+94 11 258 9558</a></li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-8 col-md-12 offset-xl-2">
@@ -62,9 +66,8 @@
             <div class="social_links_style_two">
                 <ul>
                     <li><a href="#"><i class="flaticon-facebook"></i></a></li>
-                    <li><a href="#"><i class="flaticon-twitter"></i></a></li>
                     <li><a href="#"><i class="flaticon-instagram"></i></a></li>
-                    <li><a href="#"><i class="flaticon-dribbble"></i></a></li>
+                    <li><a href="#"><i class="flaticon-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
