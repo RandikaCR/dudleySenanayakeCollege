@@ -62,7 +62,7 @@
             </div>
         </div>
         <div class="footer_bottom_home_one">
-            <div class="copyright_text_home_one">&copy; 2025 <a href="index.html">Liggeet.</a> All Rights Reserved</div>
+            <div class="copyright_text_home_one">&copy; {{ date('Y', time()) }} <a href="{{ url('/') }}">Admin @ Dudley Senanayake College. Colombo 05.</a> All Rights Reserved</div>
             <div class="social_links_style_two">
                 <ul>
                     <li><a href="#"><i class="flaticon-facebook"></i></a></li>
