@@ -6,19 +6,19 @@
                 <div class="navbar-brand-box horizontal-logo">
                     <a href="{{ url('/admin') }}" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="{{ asset('assets/common/images/logo.png') }}" alt="" height="22">
+                            <img src="{{ asset('assets/common/images/logo_admin_mini.png') }}" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="{{ asset('assets/common/images/logo.png') }}" alt="" height="17">
+                            <img src="{{ asset('assets/common/images/logo_admin.png') }}" alt="" height="17">
                         </span>
                     </a>
 
                     <a href="{{ url('/admin') }}" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="{{ asset('assets/common/images/logo.png') }}" alt="" height="22">
+                            <img src="{{ asset('assets/common/images/logo_admin_mini.png') }}" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="{{ asset('assets/common/images/logo.png') }}" alt="" height="17">
+                            <img src="{{ asset('assets/common/images/logo_admin.png') }}" alt="" height="17">
                         </span>
                     </a>
                 </div>

@@ -4,19 +4,19 @@
         <!-- Dark Logo-->
         <a href="{{ url('/admin') }}" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="{{ asset('assets/common/images/logo.png') }}" alt="" height="40">
+                        <img src="{{ asset('assets/common/images/logo_admin_mini.png') }}" alt="" height="40">
                     </span>
             <span class="logo-lg">
-                        <img src="{{ asset('assets/common/images/logo.png') }}" alt="" height="40">
+                        <img src="{{ asset('assets/common/images/logo_admin.png') }}" alt="" height="40">
                     </span>
         </a>
         <!-- Light Logo-->
         <a href="{{ url('/admin') }}" class="logo logo-light">
                     <span class="logo-sm">
-                        <img src="{{ asset('assets/common/images/logo.png') }}" alt="" height="40">
+                        <img src="{{ asset('assets/common/images/logo_admin_mini.png') }}" alt="" height="40">
                     </span>
             <span class="logo-lg">
-                        <img src="{{ asset('assets/common/images/logo.png') }}" alt="" height="40">
+                        <img src="{{ asset('assets/common/images/logo_admin.png') }}" alt="" height="40">
                     </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
