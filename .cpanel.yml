@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/idealmar/public_html/school.idealmart.lk/
+    - export DEPLOYPATH=/home/idealmar/public_html/dev5.idealmart.lk/
     - /bin/cp -R app $DEPLOYPATH
     - /bin/cp -R lang $DEPLOYPATH
     - /bin/cp -R public $DEPLOYPATH
