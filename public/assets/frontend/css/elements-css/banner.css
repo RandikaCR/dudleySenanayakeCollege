@@ -19,7 +19,7 @@
     margin-bottom: 8px;
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-image: url(../../images/shape/title-shape.svg);
+    background-image: url(../../images/shape/title-shape-white.svg);
 }
 .banner_left_text h1{
     font-size: 85px;
@@ -128,7 +128,7 @@
     margin-bottom: 8px;
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-image: url(../../images/shape/title-shape.svg);
+    background-image: url(../../images/shape/title-shape-white.svg);
 }
 .banner_home_three .slide .content-box h1{
     position: relative;
@@ -139,7 +139,7 @@
     margin-bottom: 30px;
 }
 .banner_home_three .slide .content-box h1:before{
-    position: absolute;
+    /*position: absolute;
     top: -80px;
     right: -60px;
     content: "";
@@ -147,7 +147,7 @@
     height: 100px;
     background-position: right top;
     background-repeat: no-repeat;
-    background-image: url(../../images/banner/shape-three.svg);
+    background-image: url(../../images/banner/shape-three.svg);*/
 }
 .banner_home_three .slide .content-box h4{
     color: var(--bs-white);
@@ -265,7 +265,7 @@
     margin-bottom: 10px;
     background-position: bottom left;
     background-repeat: no-repeat;
-    background-image: url(../../images/shape/title-shape.svg);
+    background-image: url(../../images/shape/title-shape-white.svg);
 }
 .banner_home_four .content-box h1{
     position: relative;

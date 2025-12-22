@@ -355,22 +355,22 @@
     position: relative;
 }
 .process_block:nth-child(2)::after {
-    position: absolute;
+    /*position: absolute;
     top: 30%;
     left: -100px;
     width: 110px;
     height: 55px;
     content: "";
-    background-image: url("../images/shape/shape-12.svg");
+    background-image: url("../images/shape/shape-12.svg");*/
 }
 .process_block:nth-child(2)::before {
-    position: absolute;
+    /*position: absolute;
     top: 30%;
     right: -100px;
     width: 110px;
     height: 55px;
     content: "";
-    background-image: url("../images/shape/shape-13.svg");
+    background-image: url("../images/shape/shape-13.svg");*/
 }
 .process_block:nth-child(2) .process_block_item {
     margin: 0px auto 60px;

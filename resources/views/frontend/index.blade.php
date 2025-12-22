@@ -6,42 +6,33 @@
     <!-- Banner Home Three -->
     <section class="banner_home_three">
         <div class="banner-three-carousel owl-carousel owl-theme owl-nav-none">
-            <div class="slide" style="background-image:url({{ asset('assets/frontend/images/banner/banner-image-06.png') }})">
-                <div class="shape_one" style="background-image: url({{ asset('assets/frontend/images/banner/shape-one.svg') }});"></div>
-                <div class="shape_two" style="background-image: url({{ asset('assets/frontend/images/banner/shape-two.svg') }});"></div>
-                <div class="shape_four" style="background-image: url({{ asset('assets/frontend/images/banner/shape-four.svg') }});"></div>
+            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_1.jpg') }})">
                 <div class="container">
                     <div class="content-box">
-                        <h3>Rising to the Climate</h3>
-                        <h1>Challenge.</h1>
-                        <h4 class="text">We are one of the largest, most diverse universities in <br>the USA with over 90,000 students in USA</h4>
-                        <div class="link-button"><a href="resgister.html" class="button-style-four">Free Join Us <i class="fa-solid fa-arrow-right"></i></a></div>
+                        <h3>Sub title goes here</h3>
+                        <h1>Title goes here</h1>
+                        <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
+                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image:url({{ asset('assets/frontend/images/banner/banner-image-06.png') }})">
-                <div class="shape_one" style="background-image: url({{ asset('assets/frontend/images/banner/shape-one.svg') }});"></div>
-                <div class="shape_two" style="background-image: url({{ asset('assets/frontend/images/banner/shape-two.svg') }});"></div>
-                <div class="shape_four" style="background-image: url({{ asset('assets/frontend/images/banner/shape-four.svg') }});"></div>
+            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_2.jpg') }})">
                 <div class="container">
                     <div class="content-box">
-                        <h3>Rising to the Climate</h3>
-                        <h1>Challenge.</h1>
-                        <h4 class="text">We are one of the largest, most diverse universities in <br>the USA with over 90,000 students in USA</h4>
-                        <div class="link-button"><a href="resgister.html" class="button-style-four">Free Join Us <i class="fa-solid fa-arrow-right"></i></a></div>
+                        <h3>Sub title goes here</h3>
+                        <h1>Title goes here</h1>
+                        <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
+                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image:url({{ asset('assets/frontend/images/banner/banner-image-06.png') }})">
-                <div class="shape_one" style="background-image: url({{ asset('assets/frontend/images/banner/shape-one.svg') }});"></div>
-                <div class="shape_two" style="background-image: url({{ asset('assets/frontend/images/banner/shape-two.svg') }});"></div>
-                <div class="shape_four" style="background-image: url({{ asset('assets/frontend/images/banner/shape-four.svg') }});"></div>
+            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_3.jpg') }})">
                 <div class="container">
                     <div class="content-box">
-                        <h3>Rising to the Climate</h3>
-                        <h1>Challenge.</h1>
-                        <h4 class="text">We are one of the largest, most diverse universities in <br>the USA with over 90,000 students in USA</h4>
-                        <div class="link-button"><a href="resgister.html" class="button-style-four">Free Join Us <i class="fa-solid fa-arrow-right"></i></a></div>
+                        <h3>Sub title goes here</h3>
+                        <h1>Title goes here</h1>
+                        <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
+                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -51,8 +42,6 @@
 
     <!-- Feature Section Home Three -->
     <section class="feature_section_home_three" style="background-image: url({{ asset('assets/frontend/images/shape/map_shape.png') }});">
-        <div class="shape-one"><img src="{{ asset('assets/frontend/images/shape/shape-09.svg') }}" alt=""></div>
-        <div class="shape-two"><img src="{{ asset('assets/frontend/images/shape/shape-10.svg') }}" alt=""></div>
         <div class="container">
             <div class="section_title_one centred mb_60">
                 <h5>How our services</h5>
@@ -134,7 +123,6 @@
     <section class="video_section_home_three">
         <div class="container">
             <div class="video_inner">
-                <div class="shape"><img src="{{ asset('assets/frontend/images/shape/shape-11.svg') }}" alt=""></div>
                 <figure class="image_box">
                     <img src="{{ asset('assets/frontend/images/background/bg-image-05.jpg') }}" alt="">
                 </figure>
@@ -346,7 +334,6 @@
     <!-- Apply Admission Section Home Three -->
     <section class="apply_admission_home_three">
         <div class="container">
-            <div class="shape"><img src="{{ asset('assets/frontend/images/shape/shape-19.png') }}" alt=""></div>
             <div class="apply_admission_inner">
                 <div class="icon_box">
                     <img src="{{ asset('assets/frontend/images/shape/notification.svg') }}" alt="">
@@ -480,10 +467,6 @@
 
     <!-- Blog Section Home One -->
     <section class="blog_section_home_one style_two sec_padding_120">
-        <div class="shape">
-            <div class="shape-1"><img src="{{ asset('assets/frontend/images/shape/shape-07.svg') }}" alt=""></div>
-            <div class="shape-2"><img src="{{ asset('assets/frontend/images/shape/shape-06.svg') }}" alt=""></div>
-        </div>
         <div class="container">
             <div class="outer_box">
                 <div class="section_title_two mb_60">

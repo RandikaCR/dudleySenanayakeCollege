@@ -201,6 +201,11 @@
     padding: 0px;
     justify-content: space-between;
 }
+
+.logo-box{
+    max-width: 300px;
+}
+
 .fixed_header .sticky_header{
     opacity:1;
     visibility:visible;

@@ -72,6 +72,11 @@
                                                 <li><a href="{{ url('/academics') }}">Academics</a></li>
                                             </ul>
                                         </li>
+                                        <li class="dropdown"><a href="{{ url('/non-academics') }}">Non-Academics</a>
+                                            <ul>
+                                                <li><a href="{{ url('/non-academics') }}">Non-Academics</a></li>
+                                            </ul>
+                                        </li>
                                         <li class="dropdown"><a href="{{ url('/sports') }}">Sports</a>
                                             <ul>
                                                 <li><a href="{{ url('/sports') }}">All Sports</a></li>
@@ -86,12 +91,12 @@
                                 </div>
                             </nav>
                         </div>
-                        <div class="search_box">
+                        {{--<div class="search_box">
                             <form method="search" action="{{ url('/') }}">
                                 <input type="search" name="search-input" value="" placeholder="Search ..." required >
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
             </div>
