@@ -37,6 +37,13 @@
 <link href="{{ asset('assets/frontend/css/elements-css/blog.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/frontend/css/elements-css/event.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/frontend/css/elements-css/footer.css') }}" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery.min.css" integrity="sha512-QMCloGTsG2vNSnHcsxYTapI6pFQNnUP6yNizuLL5Wh3ha6AraI6HrJ3ABBaw6SIUHqlSTPQDs/SydiR98oTeaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link href="{{ asset('assets/backend/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
+
 <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet">
 <link href="{{ asset('assets/frontend/css/responsive.css') }}" rel="stylesheet">
 <!-- End Stylesheets -->
@@ -49,3 +56,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
 <!-- End Google Fonts -->
+<style type="text/css">
+    .carousel-item {
+        .lg-item > img {
+            height: 600px;
+        }
+    }
+</style>

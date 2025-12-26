@@ -24,7 +24,7 @@ abstract class Controller
         }
     }
 
-    public function generateSeoURL($string, $wordLimit = 0){
+    public function generateSeoURL($string, $withoutTimestamp = 0, $wordLimit = 0){
         $separator = '-';
 
         if($wordLimit != 0){
@@ -47,7 +47,12 @@ abstract class Controller
         }
 
         $string = strtolower($string);
-        $slug = trim(trim($string, $separator)) . '-' . time();
+
+        if (!empty($withoutTimestamp)){
+            $slug = trim(trim($string, $separator));
+        }else{
+            $slug = trim(trim($string, $separator)) . '-' . time();
+        }
 
         return $slug;
     }
@@ -80,23 +85,25 @@ abstract class Controller
     }
 
 
-    public function commonImageUpload($req){
+    public function commonImageUpload($req, $folder = ''){
 
         $status = 'error';
         $file_name = '';
+
+        $folder = !empty($folder) ? $folder . '/' : '';
 
         $image_data = $req->image;
         $image_array_1 = explode(";", $image_data);
         $image_array_2 = explode(",", $image_array_1[1]);
         $data = base64_decode($image_array_2[1]);
         $image_name = time() . '_temp.png';
-        $upload_path = public_path('assets/common/images/uploads/' . $image_name);
+        $upload_path = public_path('assets/common/images/' . $folder . $image_name);
         file_put_contents($upload_path, $data);
 
         if ( file_exists($upload_path)) {
 
             $file_name = time() . '.jpg';
-            $file_name_with_path = public_path('assets/common/images/uploads/' . $file_name);
+            $file_name_with_path = public_path('assets/common/images/' . $folder . $file_name);
             $image = imagecreatefrompng($upload_path);
             imagejpeg($image, $file_name_with_path, 90);
             imagedestroy($image);
@@ -111,4 +118,21 @@ abstract class Controller
         ];
         return $out;
     }
+
+    public function categoryStatus($getStatus){
+
+        $status = 'Inactive';
+        $statusClass = 'bg-warning';
+
+        if ($getStatus == 1){
+            $status = 'Active';
+            $statusClass = 'bg-success';
+        }
+
+        return (Object)[
+            'text' => $status,
+            'class' => $statusClass,
+        ];
+    }
+
 }

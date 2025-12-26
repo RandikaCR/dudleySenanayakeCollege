@@ -135,6 +135,16 @@
                         </div>
                     </div>
                     <div class="card-body">
+                        <div class="row mb-5">
+                            <div class="col-sm-12">
+                                <label>Category</label>
+                                <select class="form-control" name="news_category_id">
+                                    @foreach($categories as $category)
+                                        <option value="{{ $category->id }}" {{ (!empty($news) && $news->news_category_id == $category->id) ? 'selected' : '' }}>{{ $category->news_category }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-12 mb-4">
                                 <label>Images</label>
@@ -167,7 +177,7 @@
                                                 @foreach($images as $img )
                                                     <div class="col-md-6 mb-3" id="row-{{ $img->id }}">
                                                         <div class="d-flex align-items-center justify-content-center img-action img-border">
-                                                            <img class="img-fluid img-bordered" src="{{ url('assets/common/images/uploads/'.$img->image) }}">
+                                                            <img class="img-fluid img-bordered" src="{{ url('assets/common/images/uploads/news/'.$img->image) }}">
                                                             @if( $img->is_primary == 1 )
                                                                 <span class="badge bg-success" style="position: absolute;top: 10px;right: 10px;"><i class="mdi mdi-key"></i></span>
                                                             @else
@@ -221,7 +231,7 @@
 
         function appendImage($img){
 
-            $image = "{{ url('assets/common/images/uploads') }}/" + $img.filename;
+            $image = "{{ url('assets/common/images/uploads/news') }}/" + $img.filename;
 
             $item = $('<div></div>').addClass('col-md-6 mb-3').attr('id', $img.id);
 
@@ -262,24 +272,42 @@
             return $item;
         }
 
-        ClassicEditor.create(document.querySelector("#content-en"))
-            .then(function (e) {
+        ClassicEditor.create(document.querySelector("#content-en"), {
+            toolbar: {
+                //removeItems: [ 'insertImage', 'blockQuote', 'link' ],
+                items: [
+                    'heading', '|', 'bold', 'italic', 'listItem', 'link', '|', 'undo', 'redo'
+                ]
+            },
+        }).then(function (e) {
                 e.ui.view.editable.element.style.height = "200px";
             })
             .catch(function (e) {
                 console.error(e);
             });
 
-        ClassicEditor.create(document.querySelector("#content-si"))
-            .then(function (e) {
+        ClassicEditor.create(document.querySelector("#content-si"), {
+            toolbar: {
+                //removeItems: [ 'insertImage', 'blockQuote', 'link' ],
+                items: [
+                    'heading', '|', 'bold', 'italic', 'listItem', 'link', '|', 'undo', 'redo'
+                ]
+            },
+        }).then(function (e) {
                 e.ui.view.editable.element.style.height = "200px";
             })
             .catch(function (e) {
                 console.error(e);
             });
 
-        ClassicEditor.create(document.querySelector("#content-ta"))
-            .then(function (e) {
+        ClassicEditor.create(document.querySelector("#content-ta"), {
+            toolbar: {
+                //removeItems: [ 'insertImage', 'blockQuote', 'link' ],
+                items: [
+                    'heading', '|', 'bold', 'italic', 'listItem', 'link', '|', 'undo', 'redo'
+                ]
+            },
+        }).then(function (e) {
                 e.ui.view.editable.element.style.height = "200px";
             })
             .catch(function (e) {
@@ -290,8 +318,8 @@
         $image_thumb = $('#thumb_image_demo').croppie({
             enableExif: true,
             viewport: {
-                width:250,
-                height:144,
+                width:280,
+                height:147,
                 type:'square' //circle
             },
             boundary:{
@@ -318,8 +346,8 @@
                 type: 'canvas',
                 /*size: 'original'*/
                 size: {
-                    width: 1180,
-                    height: 680
+                    width: 1200,
+                    height: 630
                 }
             }).then(function(response){
 

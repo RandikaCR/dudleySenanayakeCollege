@@ -5,15 +5,31 @@ use Illuminate\Support\Facades\Route;
 
 //FRONTEND CONTROLLERS
 use App\Http\Controllers\Frontend\FrontendController AS Frontend;
+use App\Http\Controllers\Frontend\EventsController AS FrontendEvents;
+use App\Http\Controllers\Frontend\NewsController AS FrontendNews;
 
 
 //BACKEND CONTROLLERS
 use App\Http\Controllers\Backend\DashboardController AS BackendDashboard;
 
+// N
+use App\Http\Controllers\Backend\EventsController AS BackendEvents;
+use App\Http\Controllers\Backend\EventCategoriesController AS BackendEventCategories;
+
+// N
+use App\Http\Controllers\Backend\NewsController AS BackendNews;
+use App\Http\Controllers\Backend\NewsCategoriesController AS BackendNewsCategories;
+
 //1 - Frontend Routes
 Route::group([ 'prefix' =>'/'], function () {
 
     Route::get('/', [Frontend::class, 'index'])->name('frontend.homepage');
+
+    Route::get('/events', [FrontendEvents::class, 'index'])->name('frontend.events.index');
+    Route::get('/event/{slug}', [FrontendEvents::class, 'view'])->name('frontend.events.view');
+
+    Route::get('/news', [FrontendNews::class, 'index'])->name('frontend.news.index');
+    Route::get('/news/{slug}', [FrontendNews::class, 'view'])->name('frontend.news.view');
 
     Route::get('/set-localization/{lang}', [Frontend::class, 'localization'])->name('frontend.localization');
 
@@ -34,11 +50,30 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::get('/', [BackendDashboard::class, 'index'])->name('backend.dashboard');
 
 
+        // E
+        Route::get('/events', [BackendEvents::class, 'index'])->name('backend.events.index');
+        Route::get('/events/create', [BackendEvents::class, 'create'])->name('backend.events.create');
+        Route::get('/events/edit/{slug}', [BackendEvents::class, 'edit'])->name('backend.events.edit');
+        Route::post('/events/store', [BackendEvents::class, 'store'])->name('backend.events.store');
+        Route::post('/events/delete', [BackendEvents::class, 'delete'])->name('backend.events.delete');
+        Route::post('/events/slug-generator', [BackendEvents::class, 'slugGenerator'])->name('backend.events.slugGenerator');
+        Route::post('/events/upload-image', [BackendEvents::class, 'imageUpload'])->name('backend.events.imageUpload');
+        Route::post('/events/set-primary-image', [BackendEvents::class, 'setPrimaryImage'])->name('backend.events.setPrimaryImage');
+        Route::post('/events/image-delete', [BackendEvents::class, 'deleteImage'])->name('backend.events.deleteImage');
+        Route::post('/events/status', [BackendEvents::class, 'status'])->name('backend.events.status');
+
+        Route::get('/event-categories', [BackendEventCategories::class, 'index'])->name('backend.eventCategories.index');
+        Route::post('/event-categories/store', [BackendEventCategories::class, 'store'])->name('backend.eventCategories.store');
+        Route::post('/event-categories/get', [BackendEventCategories::class, 'get'])->name('backend.eventCategories.get');
+        Route::post('/event-categories/status', [BackendEventCategories::class, 'status'])->name('backend.eventCategories.status');
+        Route::post('/event-categories/slug-generator', [BackendEventCategories::class, 'slugGenerator'])->name('backend.eventCategories.slugGenerator');
+
+
         // L
-        Route::get('/localizations', [BackendLocalizations::class, 'index'])->name('backend.localizations.index');
+       /* Route::get('/localizations', [BackendLocalizations::class, 'index'])->name('backend.localizations.index');
         Route::get('/localizations/create', [BackendLocalizations::class, 'create'])->name('backend.localizations.create');
         Route::get('/localizations/edit/{slug}', [BackendLocalizations::class, 'edit'])->name('backend.localizations.edit');
-        Route::post('/localizations/store', [BackendLocalizations::class, 'store'])->name('backend.localizations.store');
+        Route::post('/localizations/store', [BackendLocalizations::class, 'store'])->name('backend.localizations.store');*/
 
 
         // N
@@ -51,6 +86,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::post('/news/upload-image', [BackendNews::class, 'imageUpload'])->name('backend.news.imageUpload');
         Route::post('/news/set-primary-image', [BackendNews::class, 'setPrimaryImage'])->name('backend.news.setPrimaryImage');
         Route::post('/news/image-delete', [BackendNews::class, 'deleteImage'])->name('backend.news.deleteImage');
+        Route::post('/news/status', [BackendNews::class, 'status'])->name('backend.news.status');
+
+        Route::get('/news-categories', [BackendNewsCategories::class, 'index'])->name('backend.newsCategories.index');
+        Route::post('/news-categories/store', [BackendNewsCategories::class, 'store'])->name('backend.newsCategories.store');
+        Route::post('/news-categories/get', [BackendNewsCategories::class, 'get'])->name('backend.newsCategories.get');
+        Route::post('/news-categories/status', [BackendNewsCategories::class, 'status'])->name('backend.newsCategories.status');
+        Route::post('/news-categories/slug-generator', [BackendNewsCategories::class, 'slugGenerator'])->name('backend.newsCategories.slugGenerator');
 
 
 

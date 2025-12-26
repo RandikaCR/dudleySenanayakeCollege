@@ -34,7 +34,12 @@
                                 </ul>
                             </div>
                             <div class="log_in_button">
-                                <a href="{{ route('login') }}" class="button-style-four"><i class="flaticon-user-1"></i> Login</a>
+                                @if(!empty(Auth::user()->id))
+                                    <a href="javascript:void(0);" class="button-style-four logout"><i class="flaticon-user-1"></i> Logout</a>
+                                @else
+                                    <a href="{{ route('login') }}" class="button-style-four"><i class="flaticon-user-1"></i> Login</a>
+                                @endif
+
                             </div>
                         </div>
                     </div>

@@ -10,7 +10,9 @@
 
 @include('partials.frontend.header')
 
- @yield('content')
+@yield('breadcrumb')
+
+@yield('content')
 
 @include('partials.frontend.footer')
 

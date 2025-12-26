@@ -99,8 +99,11 @@
                                             <th scope="col" style="width: 10%;">
                                                 <p class="mb-0"></p>
                                             </th>
-                                            <th scope="col" style="width: 60%;">
+                                            <th scope="col" style="width: 50%;">
                                                 <p class="mb-0">News Title</p>
+                                            </th>
+                                            <th class="text-center" scope="col">
+                                                <p class="mb-0">Category</p>
                                             </th>
                                             <th class="text-center" scope="col">
                                                 <p class="mb-0">Status</p>
@@ -112,13 +115,13 @@
                                         </thead>
                                         <tbody>
                                         @foreach($all_news as $news)
-                                            <tr>
+                                            <tr id="row-{{ $news->id }}">
                                                 <td class="fw-medium text-center">
                                                     <p class="mb-0">{{ $news->id }}</p>
                                                 </td>
                                                 <td>
                                                     <div class="bg-light rounded p-1">
-                                                        <img src="{{ asset('assets/common/images/uploads/' .$news->primary_image) }}" class="img-fluid d-block" alt="Img">
+                                                        <img src="{{ asset('assets/common/images/uploads/news/' .$news->primary_image) }}" class="img-fluid d-block" alt="Img">
                                                     </div>
                                                 </td>
                                                 <td>
@@ -127,12 +130,22 @@
                                                     <p class="mb-0">{{ $news->ta_title }}</p>
                                                 </td>
                                                 <td class="text-center">
+                                                    <p class="mb-0">{{ $news->news_category->news_category }}</p>
+                                                </td>
+                                                <td class="text-center">
                                                     <p class="mb-0"><span class="badge {{ $news->status()->class }}">{{ $news->status()->text }}</span></p>
                                                 </td>
                                                 <td class="text-end">
-                                                    <a href="{{ url('news/' . $news->slug) }}" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><span class="mdi mdi-magnify"></span></a>
-                                                    <a href="{{ route('backend.news.edit', $news->uuid) }}" class="btn btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="mdi mdi-pencil"></span></a>
-                                                    <a href="javascript:void(0);" class="btn btn-danger btn-sm waves-effect waves-light delete" data-id="{{ $news->id }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="mdi mdi-delete"></span></a>
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <div class="form-check form-switch form-switch-success form-switch-md">
+                                                            <input class="form-check-input status" data-id="{{ $news->id }}" type="checkbox" role="switch"  {{ ($news->status == 1) ? 'checked': '' }} >
+                                                        </div>
+                                                        <div>
+                                                            <a href="{{ url('news/' . $news->slug) }}" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><span class="mdi mdi-magnify"></span></a>
+                                                            <a href="{{ route('backend.news.edit', $news->uuid) }}" class="btn btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="mdi mdi-pencil"></span></a>
+                                                            <a href="javascript:void(0);" class="btn btn-danger btn-sm waves-effect waves-light delete" data-id="{{ $news->id }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="mdi mdi-delete"></span></a>
+                                                        </div>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -229,6 +242,31 @@
                     }
                 });
 
+            });
+
+            $('.table').on('change', '.status', function (){
+                $id = $(this).data('id');
+                $url = "{{ route('backend.news.status') }}";
+                $rowId = '#row-' + $id;
+                $.ajax({
+                    url: $url,
+                    dataType: 'json',
+                    data: {
+                        "id": $id,
+                        "_token": csrf_token()
+                    },
+                    method: 'POST',
+                    beforeSend: function ($jqXHR, $obj) {
+
+                    },
+                    success: function ($res, $textStatus, $jqXHR) {
+                        $($rowId).find('.badge').removeClass('bg-success bg-warning').addClass($res.class);
+                        $($rowId).find('.badge').html($res.text);
+                    },
+                    error: function ($jqXHR, $textStatus, $errorThrown) {
+
+                    }
+                });
             });
 
         });

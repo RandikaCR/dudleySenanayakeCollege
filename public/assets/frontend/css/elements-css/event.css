@@ -45,7 +45,7 @@
     font-size: 85px;
     line-height: 95px;
     font-weight: 700;
-    text-transform: uppercase;   
+    text-transform: uppercase;
 }
 .event_section_home_one .slide_container {
     position: absolute;
@@ -270,7 +270,7 @@
     padding: 30px 50px 65px;
     background-color: var(--bs-white);
 }
-.event_content .content_outer .date{    
+.event_content .content_outer .date{
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
@@ -279,7 +279,7 @@
     color: var(--theme-color-two);
     font-family: var(--titillium);
 }
-.event_content .content_outer .date span{    
+.event_content .content_outer .date span{
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -295,7 +295,7 @@
 }
 .event_content .content_outer ul li{
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;
     padding: 0px;
     gap: 10px;
     font-style: normal;
@@ -465,11 +465,11 @@
 .event_block_three .inner_box .show_links{
     transform: scaleY(0);
     transform-origin: bottom;
-    transition: all 500ms;    
+    transition: all 500ms;
 }
 .event_block_three .inner_box:hover .show_links{
     margin: 25px 0px;
-    transform: scale(1.0);    
+    transform: scale(1.0);
 }
 .event_block_three .inner_box .show_links a{
     font-style: normal;
@@ -511,7 +511,7 @@
 }
 .events-slide-area .owl-dots .owl-dot span{
     width: 18px;
-    height: 18px;    
+    height: 18px;
     display: block;
     border-radius: 50%;
     transition: all 500ms;
@@ -586,13 +586,13 @@
     font-size: 16px;
     line-height: 29px;
     font-style: normal;
-    height: 60px;    
+    height: 60px;
     padding-right: 20px;
     border-radius: 0;
     font-family: var(--manrope);
     color: rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(230, 230, 230, 1);
-    background-color: var(--bs-white);    
+    background-color: var(--bs-white);
 }
 .find_events_form button{
     width: 100%;
@@ -648,7 +648,7 @@
 }
 .event_block_four .date_box{
     width: 90px;
-    padding: 20px 0px;
+    padding: 0px;
     display: block;
     text-align: center;
     justify-items: center;
@@ -687,7 +687,20 @@
     color: var(--theme-color-two);
     font-family: var(--titillium);
 }
-.event_block_four .event_inner_box h5 a:hover{
+
+.event_block_four .event_inner_box h6 a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    display: inline-block;
+    margin-bottom: 0;
+    color: var(--theme-color-two);
+    font-family: var(--titillium);
+}
+
+.event_block_four .event_inner_box h5 a:hover,
+.event_block_four .event_inner_box h6 a:hover{
     color: var(--primary-color);
 }
 .event_block_four .event_inner_box .event_info{
@@ -697,6 +710,7 @@
     gap: 20px;
 }
 .event_block_four .event_inner_box .event_info li{
+    font-size: 12px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
