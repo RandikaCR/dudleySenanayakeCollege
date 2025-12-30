@@ -24,6 +24,8 @@ use App\Http\Controllers\Backend\NewsCategoriesController AS BackendNewsCategori
 Route::group([ 'prefix' =>'/'], function () {
 
     Route::get('/', [Frontend::class, 'index'])->name('frontend.homepage');
+    Route::get('/contact', [Frontend::class, 'contact'])->name('frontend.contact');
+    Route::get('/sports', [Frontend::class, 'sports'])->name('frontend.sports');
 
     Route::get('/events', [FrontendEvents::class, 'index'])->name('frontend.events.index');
     Route::get('/event/{slug}', [FrontendEvents::class, 'view'])->name('frontend.events.view');

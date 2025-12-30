@@ -120,7 +120,7 @@
     <!-- End About Section Home Three -->
 
     <!-- Video Section Home Three -->
-    <section class="video_section_home_three">
+    {{--<section class="video_section_home_three">
         <div class="container">
             <div class="video_inner">
                 <figure class="image_box">
@@ -129,7 +129,7 @@
                 <div class="video_link"><a href="https://www.youtube.com/watch?v=xPq1KrYWbqo" class="lightbox-image"><img src="{{ asset('assets/frontend/images/shape/youtube.png') }}" alt=""></a></div>
             </div>
         </div>
-    </section>
+    </section>--}}
     <!-- End Services Section Home Two -->
 
     <!-- Funfact Section Home Three -->
@@ -474,64 +474,30 @@
                     <h2>Latest News</h2>
                 </div>
                 <div class="blog_link_button">
-                    <a href="blog-list.html">View all news <i class="flaticon-next"></i></a>
+                    <a href="{{ url('/news') }}">View all news <i class="flaticon-next"></i></a>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-md-6 col-sm-12 block_block">
-                    <div class="blog_block_one mb_30">
-                        <div class="inner_box">
-                            <figure class="blog_image">
-                                <a href="blog-details.html"><img src="{{ asset('assets/frontend/images/blog/blog-image-01.jpg') }}" alt=""></a>
-                                <div class="link_btn"><a href="blog-details.html">Read More</a></div>
-                            </figure>
-                            <div class="lower_content">
-                                <ul class="post_info">
-                                    <li><a href="#"><i class="flaticon-user-2"></i> Author</a></li>
-                                    <li><a href="#"><i class="flaticon-calendar"></i> 10 /30/2022</a></li>
-                                </ul>
-                                <h4><a href="blog-details.html">Autism rates have increased and show differences in ethnic minorities</a></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                @foreach($latest_news as $ln)
+                    <div class="col-xl-4 col-md-6 col-sm-12 block_block">
+                        <div class="blog_block_one mb_30">
+                            <div class="inner_box">
+                                <figure class="blog_image">
+                                    <a href="{{ url('news/' . $ln->slug ) }}"><img src="{{ asset('assets/common/images/uploads/news/' . $ln->primary_image) }}" alt=""></a>
+                                    <div class="link_btn"><a href="{{ url('news/' . $ln->slug ) }}">Read More</a></div>
+                                </figure>
+                                <div class="lower_content">
+                                    <ul class="post_info">
+                                        {{--<li><a href="#"><i class="flaticon-user-2"></i> Author</a></li>--}}
+                                        <li><a href="#"><i class="flaticon-calendar"></i> {{ dateFormat($ln->created_at) }}</a></li>
+                                    </ul>
+                                    <h4><a href="{{ url('news/' . $ln->slug ) }}">{{ $ln->en_title }}</a></h4>
+                                    <p>{{ stringLimitLength($ln->en_content, 180) }}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 block_block">
-                    <div class="blog_block_one mb_30">
-                        <div class="inner_box">
-                            <figure class="blog_image">
-                                <a href="blog-details.html"><img src="{{ asset('assets/frontend/images/blog/blog-image-02.jpg') }}" alt=""></a>
-                                <div class="link_btn"><a href="blog-details.html">Read More</a></div>
-                            </figure>
-                            <div class="lower_content">
-                                <ul class="post_info">
-                                    <li><a href="#"><i class="flaticon-user-2"></i> Author</a></li>
-                                    <li><a href="#"><i class="flaticon-calendar"></i> 10 /30/2022</a></li>
-                                </ul>
-                                <h4><a href="blog-details.html">Gender inequality in higher education persists</a></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-sm-12 block_block">
-                    <div class="blog_block_one mb_30">
-                        <div class="inner_box">
-                            <figure class="blog_image">
-                                <a href="blog-details.html"><img src="{{ asset('assets/frontend/images/blog/blog-image-03.jpg') }}" alt=""></a>
-                                <div class="link_btn"><a href="blog-details.html">Read More</a></div>
-                            </figure>
-                            <div class="lower_content">
-                                <ul class="post_info">
-                                    <li><a href="blog-details.html"><i class="flaticon-user-2"></i> Author</a></li>
-                                    <li><a href="blog-details.html"><i class="flaticon-calendar"></i> 10 /30/2022</a></li>
-                                </ul>
-                                <h4><a href="blog-details.html">Higher education is part of the Agenda 2030 ecosystem</a></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
