@@ -27,7 +27,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
                         <div class="contact_info_item">
                             <h4 class="title">Address</h4>
-                            <p>Dudley Senanayake College. Park Road, Colombo 05 - 00500</p>
+                            <p>Dudley Senanayake College. <br>Park Road, Colombo 05 - 00500</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
