@@ -1,5 +1,15 @@
 @extends('layouts.frontend')
 
+@section('meta_info')
+    @php
+        $metaTitle = '';
+        $metaDescription = '';
+        $metaKeywords = '';
+        $metaImage = '';
+        $metaUrl = '';
+    @endphp
+@endsection
+
 @php
     $breadcrumbTitle = 'Sports';
     $breadcrumbDescription = '';

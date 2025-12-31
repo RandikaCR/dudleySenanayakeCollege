@@ -5,6 +5,16 @@
     $breadcrumbDescription = '';
 @endphp
 
+@section('meta_info')
+    @php
+        $metaTitle = $event->en_title;
+        $metaDescription = stringLimitLength($event->en_content, 260);
+        $metaKeywords = '';
+        $metaImage = asset('assets/common/images/uploads/events/' . $event->primary_image);
+        $metaUrl = url('event/' . $event->slug);
+    @endphp
+@endsection
+
 @section('breadcrumb')
     @include('partials.frontend.breadcrumb')
 @endsection

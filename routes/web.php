@@ -29,6 +29,13 @@ use App\Http\Controllers\Backend\SportCategoriesController AS BackendSportCatego
 Route::group([ 'prefix' =>'/'], function () {
 
     Route::get('/', [Frontend::class, 'index'])->name('frontend.homepage');
+    Route::get('/about', [Frontend::class, 'about'])->name('frontend.about.about');
+    Route::get('/about/history', [Frontend::class, 'schoolHistory'])->name('frontend.about.schoolHistory');
+    Route::get('/about/sports', [Frontend::class, 'aboutSports'])->name('frontend.about.aboutSports');
+    Route::get('/about/teachers', [Frontend::class, 'aboutTeachers'])->name('frontend.about.aboutTeachers');
+    Route::get('/about/prefects', [Frontend::class, 'aboutPrefects'])->name('frontend.about.aboutPrefects');
+
+
     Route::get('/contact', [Frontend::class, 'contact'])->name('frontend.contact');
     Route::get('/sports', [Frontend::class, 'sports'])->name('frontend.sports');
 

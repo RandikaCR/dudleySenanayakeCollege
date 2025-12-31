@@ -161,7 +161,7 @@ img {
     margin-bottom: 60px;
 }
 .mb_70{
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 /** Defult Form **/
 
@@ -731,4 +731,13 @@ img {
 .pagination li:last-child a{
     padding: 6px 20px;
 }
+
+.text-primary{
+    color: var(--primary-color) !important;
+}
+
+.text-secondary{
+    color: var(--secondary-color) !important;
+}
+
 /** End Pagination **/

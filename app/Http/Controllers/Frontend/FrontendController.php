@@ -37,6 +37,33 @@ class FrontendController extends Controller
         return response()->json($out);
     }
 
+    public function about(Request $request)
+    {
+        return view('frontend.about.about');
+    }
+
+    public function schoolHistory(Request $request)
+    {
+        return view('frontend.about.school-history');
+    }
+
+    public function aboutSports(Request $request)
+    {
+        return view('frontend.about.sports');
+    }
+
+    public function aboutTeachers(Request $request)
+    {
+        return view('frontend.about.teachers');
+    }
+
+    public function aboutPrefects(Request $request)
+    {
+        return view('frontend.about.prefects');
+    }
+
+
+
     public function contact(Request $request)
     {
         return view('frontend.contact');

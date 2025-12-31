@@ -6,7 +6,7 @@
                     <div class="footer_widget about_widget">
                         <div class="footer_logo">
                             <figure>
-                                <a href="index.html"><img src="{{ asset('assets/common/images/footer-logo.png') }}" alt=""></a>
+                                <a href="{{ url('/') }}"><img src="{{ asset('assets/common/images/footer-logo.png') }}" alt=""></a>
                             </figure>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
@@ -25,11 +25,11 @@
                             <div class="footer_widget quick_links_widget">
                                 <h4 class="footer_widget_title">Quick Links</h4>
                                 <ul class="quick_links_list">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="academics-one.html">Courses</a></li>
-                                    <li><a href="blog.html">News</a></li>
-                                    <li><a href="events.html">Events</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="{{ url('/about') }}">About School</a></li>
+                                    <li><a href="{{ url('/sports') }}">Sports</a></li>
+                                    <li><a href="{{ url('/news') }}">News</a></li>
+                                    <li><a href="{{ url('/events') }}">Events</a></li>
+                                    <li><a href="{{ url('/contact') }}">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -37,11 +37,11 @@
                             <div class="footer_widget links_widget">
                                 <h4 class="footer_widget_title">Links</h4>
                                 <ul class="links_list">
-                                    <li><a href="programs.html">Students</a></li>
-                                    <li><a href="admission-one.html">Faculty & Staffs</a></li>
-                                    <li><a href="campus-life.html">Visit</a></li>
-                                    <li><a href="resgister.html">Registration</a></li>
-                                    <li><a href="academics-two.html">Services</a></li>
+                                    <li><a href="javascript:void(0);">Students</a></li>
+                                    <li><a href="javascript:void(0);">Faculty & Staffs</a></li>
+                                    <li><a href="javascript:void(0);">Visit</a></li>
+                                    <li><a href="javascript:void(0);">Registration</a></li>
+                                    <li><a href="javascript:void(0);">Services</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -49,11 +49,10 @@
                             <div class="footer_widget get_in_touch_widget">
                                 <h4 class="footer_widget_title">Get in touch</h4>
                                 <ul class="get_in_touch_list">
-                                    <li><a href="academics-one.html">Academics</a></li>
-                                    <li><a href="admission-two.html">Admissions</a></li>
-                                    <li><a href="programs.html">Programs</a></li>
-                                    <li><a href="career.html">Careers</a></li>
-                                    <li><a href="index.html">Give to liggeet</a></li>
+                                    <li><a href="javascript:void(0);">Academics</a></li>
+                                    <li><a href="javascript:void(0);">Admissions</a></li>
+                                    <li><a href="javascript:void(0);">Programs</a></li>
+                                    <li><a href="javascript:void(0);">Careers</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -5,6 +5,16 @@
     $breadcrumbDescription = '';
 @endphp
 
+@section('meta_info')
+    @php
+        $metaTitle = $sport_category->sport_category . ' - Dudley Senanayake College. Colombo 05';
+        $metaDescription = '';
+        $metaKeywords = '';
+        $metaImage = '';
+        $metaUrl = url('sports/' . $sport_category->slug);
+    @endphp
+@endsection
+
 @section('breadcrumb')
     @include('partials.frontend.breadcrumb')
 @endsection

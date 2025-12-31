@@ -5,6 +5,16 @@
     $breadcrumbDescription = '';
 @endphp
 
+@section('meta_info')
+    @php
+        $metaTitle = $news->en_title;
+        $metaDescription = stringLimitLength($news->en_content, 260);
+        $metaKeywords = '';
+        $metaImage = asset('assets/common/images/uploads/news/' . $news->primary_image);
+        $metaUrl = url('news/' . $news->slug);
+    @endphp
+@endsection
+
 @section('breadcrumb')
     @include('partials.frontend.breadcrumb')
 @endsection

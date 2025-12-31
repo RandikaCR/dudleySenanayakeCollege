@@ -1,5 +1,5 @@
 
-
+@yield('meta_info')
 <meta charset="utf-8">
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +7,26 @@
 
 <title>@yield('page_title') :: Dudley Senanayake College Official Website</title>
 
-<meta property="title" content="Dudley Senanayake College. Colombo 05" />
-<meta name="description" content="">
-<meta name="keywords" content="">
+@php
+    $metaTitle = !empty($metaTitle) ? $metaTitle : 'Dudley Senanayake College. Colombo 05';
+    $metaDescription = !empty($metaDescription) ? $metaDescription : '';
+    $metaKeywords = !empty($metaKeywords) ? $metaKeywords : '';
+    $metaImage = !empty($metaImage) ? $metaImage : asset('assets/common/images/meta-image.jpg');
+    $metaUrl = !empty($metaUrl) ? $metaUrl : url('');
+@endphp
+
+<meta property="title" content="{{ $metaTitle }}" />
+<meta name="description" content="{{ $metaDescription }}">
+<meta name="keywords" content="{{ $metaKeywords }}">
 <meta name="author" content="www.dudleysenanayakecollege.lk">
 
-<meta property="og:title" content="Dudley Senanayake College. Colombo 05" />
-<meta property="og:description" content="" />
-<meta property="og:image" content="{{ asset('assets/common/images/meta-image.jpg') }}" />
-<meta property="og:url" content="www.dudleysenanayakecollege.lk" />
+<meta property="og:title" content="{{ $metaTitle }}" />
+<meta property="og:description" content="{{ $metaDescription }}" />
+<meta property="og:image" content="{{ $metaImage }}" />
+<meta property="og:url" content="{{ $metaUrl }}" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Dudley Senanayake College. Colombo 05" />
+
 
 <!-- Stylesheets -->
 <link href="{{ asset('assets/frontend/css/bootstrap.css') }}" rel="stylesheet">

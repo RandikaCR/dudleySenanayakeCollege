@@ -5,6 +5,16 @@
     $breadcrumbDescription = '';
 @endphp
 
+@section('meta_info')
+    @php
+        $metaTitle = $sport->en_title;
+        $metaDescription = stringLimitLength($sport->en_content, 260);
+        $metaKeywords = '';
+        $metaImage = asset('assets/common/images/uploads/sports/' . $sport->primary_image);
+        $metaUrl = url('sport/' . $sport->slug);
+    @endphp
+@endsection
+
 @section('breadcrumb')
     @include('partials.frontend.breadcrumb')
 @endsection
