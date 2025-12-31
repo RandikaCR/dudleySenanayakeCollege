@@ -56,8 +56,8 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li class="current"><a href="{{ url('/') }}">Home</a></li>
-                                        <li class="dropdown"><a href="{{ url('/about') }}">About</a>
+                                        <li class="{{ (request()->segment(1) == '') ? 'current' : '' }}"><a href="{{ url('/') }}">Home</a></li>
+                                        <li class="dropdown {{ (request()->segment(1) == 'about') ? 'current' : '' }}"><a href="{{ url('/about') }}">About</a>
                                             <ul>
                                                 <li><a href="{{ url('/about') }}">About School</a></li>
                                                 <li><a href="{{ url('/about/history') }}">School History</a></li>
@@ -72,17 +72,17 @@
                                                 <li><a href="{{ url('/about/prefects') }}">Prefects</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="{{ url('/academics') }}">Academics</a>
+                                        <li class="dropdown {{ (request()->segment(1) == 'academics') ? 'current' : '' }}"><a href="{{ url('/academics') }}">Academics</a>
                                             <ul>
                                                 <li><a href="{{ url('/academics') }}">Academics</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="{{ url('/non-academics') }}">Non-Academics</a>
+                                        <li class="dropdown {{ (request()->segment(1) == 'non-academics') ? 'current' : '' }}"><a href="{{ url('/non-academics') }}">Non-Academics</a>
                                             <ul>
                                                 <li><a href="{{ url('/non-academics') }}">Non-Academics</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown"><a href="{{ url('/sports') }}">Sports</a>
+                                        <li class="dropdown {{ (request()->segment(1) == 'sports' || request()->segment(1) == 'sport') ? 'current' : '' }}"><a href="{{ url('/sports') }}">Sports</a>
                                             <ul>
                                                 <li><a href="{{ url('/sports') }}">All Sports</a></li>
                                                 @foreach($navSports as $ns)
@@ -90,9 +90,9 @@
                                                 @endforeach
                                             </ul>
                                         </li>
-                                        <li><a href="{{ url('/events') }}">Events</a></li>
-                                        <li><a href="{{ url('/news') }}">News</a></li>
-                                        <li><a href="{{ url('/contact') }}">Contact</a></li>
+                                        <li class="{{ (request()->segment(1) == 'events' || request()->segment(1) == 'event') ? 'current' : '' }}"><a href="{{ url('/events') }}">Events</a></li>
+                                        <li class="{{ (request()->segment(1) == 'news') ? 'current' : '' }}"><a href="{{ url('/news') }}">News</a></li>
+                                        <li class="{{ (request()->segment(1) == 'contact') ? 'current' : '' }}"><a href="{{ url('/contact') }}">Contact</a></li>
                                     </ul>
                                 </div>
                             </nav>
