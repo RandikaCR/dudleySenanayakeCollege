@@ -1,7 +1,7 @@
 @extends('layouts.backend')
 
 @section('page_title')
-    Event Categories
+    Sport Categories
 @endsection
 
 @section('styles')
@@ -22,7 +22,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header align-items-center d-flex">
-                    <h4 class="card-title mb-0 flex-grow-1">All Event Categories</h4>
+                    <h4 class="card-title mb-0 flex-grow-1">All Sport Categories</h4>
                     <div class="flex-shrink-0">
                     </div>
                 </div><!-- end card header -->
@@ -39,7 +39,7 @@
                                                 <p class="mb-0">ID</p>
                                             </th>
                                             <th scope="col" style="width: 50%;">
-                                                <p class="mb-0">Event Category</p>
+                                                <p class="mb-0">Sport Category</p>
                                             </th>
                                             <th class="text-center" scope="col">
                                                 <p class="mb-0">Display Order</p>
@@ -59,7 +59,7 @@
                                                     <p class="mb-0">{{ $category->id }}</p>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0">{{ $category->event_category }}</p>
+                                                    <p class="mb-0">{{ $category->sport_category }}</p>
                                                 </td>
                                                 <td class="text-center">
                                                     <p class="mb-0">{{ $category->display_order }}</p>
@@ -95,7 +95,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header align-items-center d-flex">
-                    <h4 class="card-title mb-0 flex-grow-1"><span class="me-1">Create New</span><span>Event Category</span></h4>
+                    <h4 class="card-title mb-0 flex-grow-1"><span class="me-1">Create New</span><span>Sport Category</span></h4>
                     <div class="flex-shrink-0">
                     </div>
                 </div><!-- end card header -->
@@ -110,7 +110,7 @@
                         </div>
                         <div class="col-sm-12 mb-2">
                             <div>
-                                <label for="category-input" class="form-label">Event Category Name *</label>
+                                <label for="category-input" class="form-label">Sport Category Name *</label>
                                 <input type="text" class="form-control" id="category-input" placeholder="Enter here....">
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                     <div class="row">
                         <div class="col-sm-12 d-flex justify-content-end">
                             <input type="hidden" id="edit-id" value="0">
-                            <a href="{{ url('/admin/event-categories') }}" class="btn btn-outline-dark waves-effect waves-light me-2"><i class="mdi mdi-restore me-1"></i>Reset</a>
+                            <a href="{{ url('/admin/sport-categories') }}" class="btn btn-outline-dark waves-effect waves-light me-2"><i class="mdi mdi-restore me-1"></i>Reset</a>
                             <button type="button" class="btn btn-secondary waves-effect waves-light save-this-form"><i class="mdi mdi-content-save me-1"></i>SAVE</button>
                         </div>
                     </div>
@@ -155,7 +155,7 @@
                 $this = $(this);
                 $($this).prop('disabled', true);
 
-                $url = "{{ route('backend.eventCategories.store') }}";
+                $url = "{{ route('backend.sportCategories.store') }}";
 
                 $id = $('#edit-id').val();
                 $slug = $('#slug-input').val();
@@ -169,7 +169,7 @@
                         data: {
                             "id": $id,
                             "slug": $slug,
-                            "event_category": $category,
+                            "sport_category": $category,
                             "display_order": $displayOrder,
                             "_token": csrf_token()
                         },
@@ -212,7 +212,7 @@
 
                 $id = $('#temp_id').val();
 
-                $url = "{{ route('backend.eventCategories.slugGenerator') }}";
+                $url = "{{ route('backend.sportCategories.slugGenerator') }}";
 
                 $isSending = false;
                 setTimeout(function (){
@@ -249,7 +249,7 @@
 
             $('.table').on('click', '.edit', function (){
                 $id = $(this).data('id');
-                $url = "{{ route('backend.eventCategories.get') }}";
+                $url = "{{ route('backend.sportCategories.get') }}";
                 $.ajax({
                     url: $url,
                     dataType: 'json',
@@ -271,7 +271,7 @@
                     },
                     success: function ($res, $textStatus, $jqXHR) {
                         $('#edit-id').val($res.id);
-                        $('#category-input').val($res.event_category);
+                        $('#category-input').val($res.sport_category);
                         $('#order-input').val($res.display_order);
                         $('#slug-input').val($res.slug);
                         $('#form-alert-area').html('');
@@ -286,7 +286,7 @@
 
             $('.table').on('change', '.status', function (){
                 $id = $(this).data('id');
-                $url = "{{ route('backend.eventCategories.status') }}";
+                $url = "{{ route('backend.sportCategories.status') }}";
                 $rowId = '#row-' + $id;
                 $.ajax({
                     url: $url,

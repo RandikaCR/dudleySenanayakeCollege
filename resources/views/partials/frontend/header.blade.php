@@ -85,8 +85,9 @@
                                         <li class="dropdown"><a href="{{ url('/sports') }}">Sports</a>
                                             <ul>
                                                 <li><a href="{{ url('/sports') }}">All Sports</a></li>
-                                                <li><a href="{{ url('/sports/rugby') }}">Rugby</a></li>
-                                                <li><a href="{{ url('/sports/cricket') }}">Cricket</a></li>
+                                                @foreach($navSports as $ns)
+                                                    <li><a href="{{ url('/sports/' . $ns->slug) }}">{{ $ns->sport_category }}</a></li>
+                                                @endforeach
                                             </ul>
                                         </li>
                                         <li><a href="{{ url('/events') }}">Events</a></li>

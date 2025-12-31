@@ -3,15 +3,15 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
-use App\Models\EventCategories;
+use App\Models\SportCategories;
 use Illuminate\Http\Request;
 
-class EventCategoriesController extends Controller
+class SportCategoriesController extends Controller
 {
     public function index()
     {
-        $categories = EventCategories::orderBy('id', 'ASC')->orderBy('display_order', 'ASC')->get();
-        return view('backend.event-categories.index',[
+        $categories = SportCategories::orderBy('id', 'ASC')->orderBy('display_order', 'ASC')->get();
+        return view('backend.sport-categories.index',[
             'categories' => $categories
         ]);
     }
@@ -22,7 +22,7 @@ class EventCategoriesController extends Controller
 
 
         if (!empty($id)){
-            $get = EventCategories::find($id);
+            $get = SportCategories::find($id);
             $status = 'success';
 
         }else{
@@ -33,7 +33,7 @@ class EventCategoriesController extends Controller
         $out = [
             'status' => $status,
             'id' => $id,
-            'event_category' => $get->event_category,
+            'sport_category' => $get->sport_category,
             'display_order' => $get->display_order,
             'slug' => $get->slug,
         ];
@@ -54,19 +54,19 @@ class EventCategoriesController extends Controller
         if ($validator){
 
             if (!empty($id)){
-                $save = EventCategories::find($id);
+                $save = SportCategories::find($id);
             }
             else{
-                $treq = ['screen' => 'event_categories', 'id' => ''];
+                $treq = ['screen' => 'sport_categories', 'id' => ''];
                 $uuId = $this->generateUUId($treq);
 
-                $save = New EventCategories();
+                $save = New SportCategories();
                 $save->uuid = $uuId;
                 $save->status = 1;
             }
 
             $save->slug = $req['slug'];
-            $save->event_category = $req['event_category'];
+            $save->sport_category = $req['sport_category'];
             $save->display_order = !empty($req['display_order']) ? $req['display_order'] : 0;
             $save->save();
             $status = 'success';
@@ -108,7 +108,7 @@ class EventCategoriesController extends Controller
         $class = '';
 
         if (!empty($id)){
-            $get = EventCategories::find($id);
+            $get = SportCategories::find($id);
 
             if ($get->status == 1){
                 $get->status = 0;
@@ -117,7 +117,7 @@ class EventCategoriesController extends Controller
             }
             $get->save();
             $status = 'success';
-            $get = EventCategories::find($id);
+            $get = SportCategories::find($id);
             $getStatus = $this->categoryStatus($get->status);
             $text = $getStatus->text;
             $class = $getStatus->class;
@@ -143,9 +143,9 @@ class EventCategoriesController extends Controller
         $id = $request->id;
         $slug = $this->generateSeoURL($request->title, 1);
 
-        $getCount = EventCategories::where('slug', $slug)->count();
+        $getCount = SportCategories::where('slug', $slug)->count();
         if ($getCount > 0){
-            $item = EventCategories::where('id', $id)->first();
+            $item = SportCategories::where('id', $id)->first();
             if (!empty($item)){
                 if ($item->slug != $slug){
                     $isExist = 1;

@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\FrontendController AS Frontend;
 use App\Http\Controllers\Frontend\EventsController AS FrontendEvents;
 use App\Http\Controllers\Frontend\NewsController AS FrontendNews;
+use App\Http\Controllers\Frontend\SportsController AS FrontendSports;
 
 
 //BACKEND CONTROLLERS
@@ -20,6 +21,10 @@ use App\Http\Controllers\Backend\EventCategoriesController AS BackendEventCatego
 use App\Http\Controllers\Backend\NewsController AS BackendNews;
 use App\Http\Controllers\Backend\NewsCategoriesController AS BackendNewsCategories;
 
+// S
+use App\Http\Controllers\Backend\SportsController AS BackendSports;
+use App\Http\Controllers\Backend\SportCategoriesController AS BackendSportCategories;
+
 //1 - Frontend Routes
 Route::group([ 'prefix' =>'/'], function () {
 
@@ -32,6 +37,9 @@ Route::group([ 'prefix' =>'/'], function () {
 
     Route::get('/news', [FrontendNews::class, 'index'])->name('frontend.news.index');
     Route::get('/news/{slug}', [FrontendNews::class, 'view'])->name('frontend.news.view');
+
+    Route::get('/sports/{slug}', [FrontendSports::class, 'index'])->name('frontend.sports.index');
+    Route::get('/sport/{slug}', [FrontendSports::class, 'view'])->name('frontend.sports.view');
 
     Route::get('/set-localization/{lang}', [Frontend::class, 'localization'])->name('frontend.localization');
 
@@ -97,6 +105,23 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::post('/news-categories/slug-generator', [BackendNewsCategories::class, 'slugGenerator'])->name('backend.newsCategories.slugGenerator');
 
 
+        // S
+        Route::get('/sports', [BackendSports::class, 'index'])->name('backend.sports.index');
+        Route::get('/sports/create', [BackendSports::class, 'create'])->name('backend.sports.create');
+        Route::get('/sports/edit/{slug}', [BackendSports::class, 'edit'])->name('backend.sports.edit');
+        Route::post('/sports/store', [BackendSports::class, 'store'])->name('backend.sports.store');
+        Route::post('/sports/delete', [BackendSports::class, 'delete'])->name('backend.sports.delete');
+        Route::post('/sports/slug-generator', [BackendSports::class, 'slugGenerator'])->name('backend.sports.slugGenerator');
+        Route::post('/sports/upload-image', [BackendSports::class, 'imageUpload'])->name('backend.sports.imageUpload');
+        Route::post('/sports/set-primary-image', [BackendSports::class, 'setPrimaryImage'])->name('backend.sports.setPrimaryImage');
+        Route::post('/sports/image-delete', [BackendSports::class, 'deleteImage'])->name('backend.sports.deleteImage');
+        Route::post('/sports/status', [BackendSports::class, 'status'])->name('backend.sports.status');
+
+        Route::get('/sport-categories', [BackendSportCategories::class, 'index'])->name('backend.sportCategories.index');
+        Route::post('/sport-categories/store', [BackendSportCategories::class, 'store'])->name('backend.sportCategories.store');
+        Route::post('/sport-categories/get', [BackendSportCategories::class, 'get'])->name('backend.sportCategories.get');
+        Route::post('/sport-categories/status', [BackendSportCategories::class, 'status'])->name('backend.sportCategories.status');
+        Route::post('/sport-categories/slug-generator', [BackendSportCategories::class, 'slugGenerator'])->name('backend.sportCategories.slugGenerator');
 
 
     });

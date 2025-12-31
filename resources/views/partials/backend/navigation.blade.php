@@ -81,6 +81,22 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarSports" data-bs-toggle="collapse" role="button" aria-expanded="{{ (request()->segment(2) == 'sports') ? 'true' : 'false' }}" aria-controls="sidebarSports">
+                        <i class="mdi mdi-gift"></i> <span data-key="t-raffles-main">Sports</span>
+                    </a>
+                    <div class="collapse menu-dropdown {{ (request()->segment(2) == 'sports') ? 'show' : '' }}" id="sidebarSports">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/sports') }}" class="nav-link {{ (request()->segment(2) == 'sports' && request()->segment(3) == '') ? 'active' : '' }}" data-key="t-sports">All Sports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/sports/create') }}" class="nav-link {{ (request()->segment(2) == 'sports' && request()->segment(3) == 'create') ? 'active' : '' }}" data-key="t-sports-add">Add New</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link menu-link {{ (request()->segment(2) == 'services') ? 'active' : '' }}" href="{{ url('/admin/services') }}">
                         <i class="mdi mdi-account-details"></i> <span data-key="t-services">Services</span>
                     </a>
@@ -122,6 +138,12 @@
                 <li class="nav-item">
                     <a class="nav-link menu-link {{ (request()->segment(2) == 'news-categories') ? 'active' : '' }}" href="{{ url('/admin/news-categories') }}">
                         <i class="mdi mdi-account-details"></i> <span data-key="t-news-categories">News Categories</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link {{ (request()->segment(2) == 'sport-categories') ? 'active' : '' }}" href="{{ url('/admin/sport-categories') }}">
+                        <i class="mdi mdi-account-details"></i> <span data-key="t-sport-categories">Sport Categories</span>
                     </a>
                 </li>
 

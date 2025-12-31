@@ -5,30 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Sports extends Model
+class SportCategories extends Model
 {
     use HasFactory;
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
-    protected $table = 'sports';
+    protected $table = 'sport_categories';
 
-    public function sport_category()
-    {
-        return $this->hasOne(SportCategories::class, 'id', 'sport_category_id');
-    }
-
-    public function images()
-    {
-        return $this->hasMany(SportImages::class, 'sport_id', 'id');
-    }
-
-    public function primary_image()
-    {
-        return $this->hasOne(SportImages::class, 'sport_id', 'id');
-    }
-
-    public function status(){
+    public function categoryStatus(){
 
         $status = 'Inactive';
         $statusClass = 'bg-warning';

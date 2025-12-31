@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\News;
+use App\Models\SportCategories;
 use App\Models\Sports;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -44,7 +45,7 @@ class FrontendController extends Controller
     public function sports(Request $request)
     {
 
-        $sports = Sports::where('status', 1)->orderBy('display_order', 'ASC')->get();
+        $sports = SportCategories::where('status', 1)->orderBy('display_order', 'ASC')->get();
         return view('frontend.sports', [
             'sports' => $sports,
         ]);

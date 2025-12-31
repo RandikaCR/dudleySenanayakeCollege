@@ -1,19 +1,19 @@
 @extends('layouts.backend')
 
 @section('page_title')
-    All News
+    All Sports
 @endsection
 
 @section('breadcrumb')
     <div class="row">
         <div class="col-12">
             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                <h4 class="mb-sm-0">NEWS</h4>
+                <h4 class="mb-sm-0">Sports</h4>
 
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="javascript: void(0);">DSC Admin</a></li>
-                        <li class="breadcrumb-item active">NEWS</li>
+                        <li class="breadcrumb-item active">Sports</li>
                     </ol>
                 </div>
 
@@ -25,7 +25,7 @@
 @section('header_buttons')
     <div class="row">
         <div class="col-sm-12 d-flex justify-content-end mb-3">
-            <a href="{{ url('admin/news/create') }}" class="btn btn-primary">
+            <a href="{{ url('admin/sports/create') }}" class="btn btn-primary">
                 <span class="mdi mdi-plus-box me-2"></span>
                 Add New
             </a>
@@ -63,7 +63,7 @@
                                     <span class="mdi mdi-magnify me-2"></span>
                                     Search
                                 </button>
-                                <a href="{{ url('admin/news') }}" class="btn btn-outline-dark waves-effect waves-light ms-2">
+                                <a href="{{ url('admin/sports') }}" class="btn btn-outline-dark waves-effect waves-light ms-2">
                                     <span class="mdi mdi-restore me-2"></span>
                                     Clear
                                 </a>
@@ -80,7 +80,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header align-items-center d-flex">
-                    <h4 class="card-title mb-0 flex-grow-1">All News</h4>
+                    <h4 class="card-title mb-0 flex-grow-1">All Sports</h4>
                     <div class="flex-shrink-0">
                     </div>
                 </div><!-- end card header -->
@@ -100,7 +100,7 @@
                                                 <p class="mb-0"></p>
                                             </th>
                                             <th scope="col" style="width: 50%;">
-                                                <p class="mb-0">News Title</p>
+                                                <p class="mb-0">Sport Title</p>
                                             </th>
                                             <th class="text-center" scope="col">
                                                 <p class="mb-0">Category</p>
@@ -114,36 +114,36 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        @foreach($all_news as $news)
-                                            <tr id="row-{{ $news->id }}">
+                                        @foreach($sports as $sport)
+                                            <tr id="row-{{ $sport->id }}">
                                                 <td class="fw-medium text-center">
-                                                    <p class="mb-0">{{ $news->id }}</p>
+                                                    <p class="mb-0">{{ $sport->id }}</p>
                                                 </td>
                                                 <td>
                                                     <div class="bg-light rounded p-1">
-                                                        <img src="{{ asset('assets/common/images/uploads/news/' .$news->primary_image) }}" class="img-fluid d-block" alt="Img">
+                                                        <img src="{{ asset('assets/common/images/uploads/sports/' .$sport->primary_image) }}" class="img-fluid d-block" alt="Img">
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-1">{{ $news->en_title }}</p>
-                                                    <p class="mb-1 text-muted">{{ $news->si_title }}</p>
-                                                    <p class="mb-0">{{ $news->ta_title }}</p>
+                                                    <p class="mb-1">{{ $sport->en_title }}</p>
+                                                    <p class="mb-1 text-muted">{{ $sport->si_title }}</p>
+                                                    <p class="mb-0">{{ $sport->ta_title }}</p>
                                                 </td>
                                                 <td class="text-center">
-                                                    <p class="mb-0">{{ $news->news_category->news_category }}</p>
+                                                    <p class="mb-0">{{ $sport->sport_category->sport_category }}</p>
                                                 </td>
                                                 <td class="text-center">
-                                                    <p class="mb-0"><span class="badge {{ $news->status()->class }}">{{ $news->status()->text }}</span></p>
+                                                    <p class="mb-0"><span class="badge {{ $sport->status()->class }}">{{ $sport->status()->text }}</span></p>
                                                 </td>
                                                 <td class="text-end">
                                                     <div class="d-flex justify-content-end align-items-center">
                                                         <div class="form-check form-switch form-switch-success form-switch-md">
-                                                            <input class="form-check-input status" data-id="{{ $news->id }}" type="checkbox" role="switch"  {{ ($news->status == 1) ? 'checked': '' }} >
+                                                            <input class="form-check-input status" data-id="{{ $sport->id }}" type="checkbox" role="switch"  {{ ($sport->status == 1) ? 'checked': '' }} >
                                                         </div>
                                                         <div>
-                                                            <a href="{{ url('news/' . $news->slug) }}" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><span class="mdi mdi-magnify"></span></a>
-                                                            <a href="{{ route('backend.news.edit', $news->uuid) }}" class="btn btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="mdi mdi-pencil"></span></a>
-                                                            <a href="javascript:void(0);" class="btn btn-danger btn-sm waves-effect waves-light delete" data-id="{{ $news->id }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="mdi mdi-delete"></span></a>
+                                                            <a href="{{ url('sports/' . $sport->slug) }}" target="_blank" class="btn btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="View"><span class="mdi mdi-magnify"></span></a>
+                                                            <a href="{{ route('backend.sports.edit', $sport->uuid) }}" class="btn btn-primary btn-sm waves-effect waves-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit"><span class="mdi mdi-pencil"></span></a>
+                                                            <a href="javascript:void(0);" class="btn btn-danger btn-sm waves-effect waves-light delete" data-id="{{ $sport->id }}" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="mdi mdi-delete"></span></a>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -160,7 +160,7 @@
 
                         <div class="mt-5">
                             {{--Paginaiton--}}
-                            {!! $all_news->links('vendor.pagination.backend') !!}
+                            {!! $sports->links('vendor.pagination.backend') !!}
                         </div>
                     </div>
                 </div><!-- end card-body -->
@@ -209,7 +209,7 @@
 
                         setTimeout(function() {
                             $.ajax({
-                                url: "{{ route('backend.news.delete') }}",
+                                url: "{{ route('backend.sports.delete') }}",
                                 type: 'POST',
                                 data: {
                                     id: $id,
@@ -246,7 +246,7 @@
 
             $('.table').on('change', '.status', function (){
                 $id = $(this).data('id');
-                $url = "{{ route('backend.news.status') }}";
+                $url = "{{ route('backend.sports.status') }}";
                 $rowId = '#row-' + $id;
                 $.ajax({
                     url: $url,

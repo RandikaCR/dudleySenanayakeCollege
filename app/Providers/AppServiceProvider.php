@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\SportCategories;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +20,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        view()->composer('*', function ($view) {
+            $navSports = SportCategories::where('status', 1)->orderBy('display_order', 'ASC')->get();
+            view()->share('navSports', $navSports);
+
+
+        });
     }
 }

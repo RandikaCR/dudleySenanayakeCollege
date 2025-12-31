@@ -1,7 +1,7 @@
 @extends('layouts.frontend')
 
 @php
-    $breadcrumbTitle = $event->en_title;
+    $breadcrumbTitle = $sport->en_title;
     $breadcrumbDescription = '';
 @endphp
 
@@ -25,9 +25,9 @@
                                         @php
                                             $no = 0;
                                         @endphp
-                                        @foreach($event->images as $img)
-                                            <div class="carousel-item {{ $no == 0 ? 'active' : '' }}" data-src="{{ asset('assets/common/images/uploads/events/' . $img->image) }}">
-                                                <img src="{{ asset('assets/common/images/uploads/events/' . $img->image) }}" class="d-block w-100" alt="{{ $event->en_title }}" />
+                                        @foreach($sport->images as $img)
+                                            <div class="carousel-item {{ $no == 0 ? 'active' : '' }}" data-src="{{ asset('assets/common/images/uploads/sports/' . $img->image) }}">
+                                                <img src="{{ asset('assets/common/images/uploads/sports/' . $img->image) }}" class="d-block w-100" alt="{{ $sport->en_title }}" />
                                             </div>
                                             @php
                                                 $no++;
@@ -54,13 +54,13 @@
                                     </div>
                                     <ul class="post_info">
                                         {{--<li><a href="#"><i class="flaticon-user-2"></i> Author</a></li>--}}
-                                        <li><a href="#"><i class="flaticon-calendar"></i> {{ dateFormat($event->created_at) }}</a></li>
+                                        <li><a href="#"><i class="flaticon-calendar"></i> {{ dateFormat($sport->created_at) }}</a></li>
                                     </ul>
                                 </div>
 
-                                <h4 class="my-4 fw-bold">{{ $event->en_title }}</h4>
+                                <h4 class="my-4 fw-bold">{{ $sport->en_title }}</h4>
 
-                                {!! $event->en_content !!}
+                                {!! $sport->en_content !!}
                             </div>
                             <div class="tag-list-area">
                                 <div class="social-links">
@@ -136,19 +136,19 @@
                 <div class="col-xl-4 col-lg-12">
                     <div class="blog_sidebar_area">
                         <div class="sidebar_widget popular_event_widget mb_40">
-                            <h4 class="event_sidebar_title">Latest Events</h4>
-                            @foreach($latest_events as $ln)
+                            <h4 class="event_sidebar_title">Latest Sports</h4>
+                            @foreach($latest_sports as $ln)
                                 <div class="event_block_four mb_25">
                                     <div class="event_inner_box">
                                         <div class="date-inner">
                                             <div class="date_box">
-                                                <a href="{{ url('event/' . $ln->slug ) }}">
-                                                    <img src="{{ asset('assets/common/images/uploads/events/' . $ln->primary_image) }}" alt="">
+                                                <a href="{{ url('sport/' . $ln->slug ) }}">
+                                                    <img src="{{ asset('assets/common/images/uploads/sports/' . $ln->primary_image) }}" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                         <div class="event-content">
-                                            <h6><a href="{{ url('event/' . $ln->slug ) }}">{{ $ln->en_title }}</a></h6>
+                                            <h6><a href="{{ url('sport/' . $ln->slug ) }}">{{ $ln->en_title }}</a></h6>
                                             <ul class="event_info">
                                                 <li><i class="flaticon-clock-1"></i> {{ dateFormat($ln->created_at) }}</li>
                                             </ul>
@@ -162,7 +162,7 @@
                             <ul class="categories_checkbox">
                                 @foreach($categories as $category)
                                     <li>
-                                        <label for="styled-checkbox-1">{{ $category->event_category }} <span>({{ $category->count }})</span></label>
+                                        <label for="styled-checkbox-1">{{ $category->sport_category }} <span>({{ $category->count }})</span></label>
                                     </li>
                                 @endforeach
                             </ul>

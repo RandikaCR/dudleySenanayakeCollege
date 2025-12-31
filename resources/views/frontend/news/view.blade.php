@@ -136,7 +136,7 @@
                 <div class="col-xl-4 col-lg-12">
                     <div class="blog_sidebar_area">
                         <div class="sidebar_widget popular_event_widget mb_40">
-                            <h4 class="event_sidebar_title">Lates News</h4>
+                            <h4 class="event_sidebar_title">Latest News</h4>
                             @foreach($latest_news as $ln)
                                 <div class="event_block_four mb_25">
                                     <div class="event_inner_box">

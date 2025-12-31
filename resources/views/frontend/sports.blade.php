@@ -23,7 +23,7 @@
                                 </figure>
                                 <div class="lower_content">
                                     <div class="inner">
-                                        <h4><a href="{{ url('sports/' . $sport->slug) }}">{{ $sport->sport }}</a></h4>
+                                        <h4><a href="{{ url('sports/' . $sport->slug) }}">{{ $sport->sport_category }}</a></h4>
                                         <div class="link-btn"><a href="{{ url('sports/' . $sport->slug) }}">Read More</a></div>
                                     </div>
                                 </div>
