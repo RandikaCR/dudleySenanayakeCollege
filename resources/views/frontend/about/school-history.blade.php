@@ -34,9 +34,11 @@
                 <div class="col-xl-6 col-lg-12">
                     <div class="about_right_content">
                         <h5>About School</h5>
-                        <h2>We are one of the largest, most universities in the world.</h2>
-                        <p>Etiam in arcu dictum, maximus libero ac, porttitor ante. Mauris in ultricies odio, id porttitor nulla. Phasellus tristique vehicula eros id hendrerit. Interdum et malesuada fames ac ante ipsumisth primis in faucibus. Maecenas ultricies finibus est, non aliquet ligula suscipit id. Nulla a mi velit. Proin sollicitudin consectetur gravida. <br>
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed velv ipsum ultrices, congue eros quis, pulvinar sem. <a href="#">Quisque nec libero faucibus estte the most conguelosting</a> sodales ac sed nisl. Donec tincidunt id purus sit amet vulputate.</p>
+                        <h2>Since 1978</h2>
+                        <p>The school was established on 4th April 1978 under the concept of <span class="fw-bold">former President Ranasinghe Premadasa</span> with the aim of providing quality education to the children of government employees working in and around Narahenpita. At its inception, the school functioned as a boys’ school, mainly serving families who were unable to secure admission to leading national schools.</p>
+                        <p>The school began in a single building with only four classrooms. Shortly afterwards, four garage rooms belonging to Anderson Flats were generously provided to accommodate Grade 1 classes. The land, which measures 1 acre, 1 rood, and 2 perches, was once a wetland and has since been transformed into a vibrant centre of learning. The first principal, Mrs. Hemawellage, laid a strong foundation of discipline, commitment, and academic excellence.</p>
+                        <p>A significant milestone in our journey was the commencement of our first Advanced Level batch in the year 2000. Since then, the school has steadily expanded its academic offerings and facilities.</p>
+
                         <ul class="feauter_list_four">
                             <li class="feature_item">
                                 <div class="icon_box"><i class="flaticon-checked"></i></div>

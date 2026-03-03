@@ -6,33 +6,43 @@
     <!-- Banner Home Three -->
     <section class="banner_home_three">
         <div class="banner-three-carousel owl-carousel owl-theme owl-nav-none">
-            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_1.jpg') }})">
+            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_4.jpg') }})">
                 <div class="container">
                     <div class="content-box">
-                        <h3>Sub title goes here</h3>
+                        {{--<h3>Sub title goes here</h3>
                         <h1>Title goes here</h1>
                         <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
-                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>
+                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>--}}
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_2.jpg') }})">
+            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_1.jpg') }})">
                 <div class="container">
                     <div class="content-box">
-                        <h3>Sub title goes here</h3>
+                        {{--<h3>Sub title goes here</h3>
                         <h1>Title goes here</h1>
                         <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
-                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>
+                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>--}}
                     </div>
                 </div>
             </div>
             <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_3.jpg') }})">
                 <div class="container">
                     <div class="content-box">
-                        <h3>Sub title goes here</h3>
+                        {{--<h3>Sub title goes here</h3>
                         <h1>Title goes here</h1>
                         <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
-                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>
+                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>--}}
+                    </div>
+                </div>
+            </div>
+            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_2.jpg') }})">
+                <div class="container">
+                    <div class="content-box">
+                        {{--<h3>Sub title goes here</h3>
+                        <h1>Title goes here</h1>
+                        <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
+                        <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>--}}
                     </div>
                 </div>
             </div>
@@ -41,7 +51,7 @@
     <!-- End Banner Home Three -->
 
     <!-- Feature Section Home Three -->
-    <section class="feature_section_home_three" style="background-image: url({{ asset('assets/frontend/images/shape/map_shape.png') }});">
+    <section class="feature_section_home_three" style="background-image: url({{ asset('assets/common/images/uploads/logo_shape.png') }});">
         <div class="container">
             <div class="section_title_one centred mb_60">
                 <h5>How our services</h5>

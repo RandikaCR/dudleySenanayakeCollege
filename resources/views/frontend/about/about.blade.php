@@ -24,19 +24,18 @@
     <section class="about_section_home_four sec_padding_140">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-12">
+                <div class="col-xl-4 col-lg-12">
                     <div class="about_left_image clearfix">
                         <figure class="about_image_four">
-                            <img src="{{ asset('assets/frontend/images/resource/about-image-03.jpg') }}" alt="">
+                            <img class="img-fluid w-100" src="{{ asset('assets/common/images/school-logo.png') }}" alt="">
                         </figure>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-12">
+                <div class="col-xl-8 col-lg-12">
                     <div class="about_right_content">
                         <h5>About School</h5>
-                        <h2>We are one of the largest, most universities in the world.</h2>
-                        <p>Etiam in arcu dictum, maximus libero ac, porttitor ante. Mauris in ultricies odio, id porttitor nulla. Phasellus tristique vehicula eros id hendrerit. Interdum et malesuada fames ac ante ipsumisth primis in faucibus. Maecenas ultricies finibus est, non aliquet ligula suscipit id. Nulla a mi velit. Proin sollicitudin consectetur gravida. <br>
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed velv ipsum ultrices, congue eros quis, pulvinar sem. <a href="#">Quisque nec libero faucibus estte the most conguelosting</a> sodales ac sed nisl. Donec tincidunt id purus sit amet vulputate.</p>
+                        <h2>Dudley Senanayake College, Colombo 05.</h2>
+                        <p>Located in the heart of Colombo, within Narahenpita Village in the Salpiti Koralaya – Palle Division of the Western Province, <span class="fw-bold">Dudley Senanayake College</span> has proudly served the community for 47 years. From its humble beginnings to its present status as a 1C Provincial Mixed School, our institution stands as a symbol of dedication, discipline, and continuous progress.</p>
                         <ul class="feauter_list_four">
                             <li class="feature_item">
                                 <div class="icon_box"><i class="flaticon-checked"></i></div>
@@ -57,54 +56,32 @@
     <section class="feature_section_home_three about_page">
         <div class="container">
             <div class="section_title_one centred mb_60">
-                <h5>How our services</h5>
-                <h2>Why Choose Liggeet</h2>
+                <h5>School Moto</h5>
+                <h2 class="mt-3" style="font-style: italic;">විදු මගින් සරු බවට - Prosperity through Education</h2>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <div class="feature_block_three centred">
                         <div class="feature_inner_box">
                             <div class="icon_box"><i class="flaticon-book-1"></i></div>
                             <div class="icon_box_two"><i class="flaticon-book-1"></i></div>
                             <div class="feature_content">
-                                <h4><a href="javascript:void(0);">Innovative Courses</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
+                                <h4><a href="javascript:void(0);">දැක්ම - Vision</a></h4>
+                                <p>"නැණ ගුණ පිරි නිපුණතා සපිරි දරුවෙක්."</p>
+                                <p>"A child enriched with knowledge, good values, and competencies."</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="col-md-6 col-sm-12">
                     <div class="feature_block_three centred">
                         <div class="feature_inner_box">
                             <div class="icon_box"><i class="flaticon-graduated"></i></div>
                             <div class="icon_box_two"><i class="flaticon-graduated"></i></div>
                             <div class="feature_content">
-                                <h4><a href="javascript:void(0);">Affordability</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-education"></i></div>
-                            <div class="icon_box_two"><i class="flaticon-education"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="javascript:void(0);">Academics</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-light-bulb"></i></div>
-                            <div class="icon_box_two"><i class="flaticon-light-bulb"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="javascript:void(0);">Inspiring Student Life</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
+                                <h4><a href="javascript:void(0);">මෙහෙවර - Mission</a></h4>
+                                <p>ශ්‍රී ලාංකීය සංස්කෘතිය ජාතික අනන්‍යතාවය සුරක්ෂිත කරන අධ්‍යාපන නිපුණතාවන්ගෙන් පිරිපුන් 21 සියවසේ වැඩ ලෝකයට ගැලපෙන නවීන තාක්ෂණ කුසලතාවලින් පිරි සමතුලිත පෞරුෂත්වයෙන් යුතු දරු පිරිසක් දැයට දායාද කිරීම.</p>
+                                <p>To develop a generation of students who uphold national values and identity and are equipped with the knowledge skills and attitudes required to meet the challenges of the 21st century, through quality education, effective guidance and a disciplined learner centered school environment.</p>
                             </div>
                         </div>
                     </div>

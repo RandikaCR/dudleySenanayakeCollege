@@ -24,139 +24,47 @@
     <section class="about_section_home_four sec_padding_140">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-12">
-                    <div class="about_left_image clearfix">
-                        <figure class="about_image_four">
-                            <img src="{{ asset('assets/frontend/images/resource/about-image-03.jpg') }}" alt="">
-                        </figure>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-12">
+                <div class="col-lg-12">
                     <div class="about_right_content">
-                        <h5>About School</h5>
-                        <h2>We are one of the largest, most universities in the world.</h2>
-                        <p>Etiam in arcu dictum, maximus libero ac, porttitor ante. Mauris in ultricies odio, id porttitor nulla. Phasellus tristique vehicula eros id hendrerit. Interdum et malesuada fames ac ante ipsumisth primis in faucibus. Maecenas ultricies finibus est, non aliquet ligula suscipit id. Nulla a mi velit. Proin sollicitudin consectetur gravida. <br>
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed velv ipsum ultrices, congue eros quis, pulvinar sem. <a href="#">Quisque nec libero faucibus estte the most conguelosting</a> sodales ac sed nisl. Donec tincidunt id purus sit amet vulputate.</p>
-                        <ul class="feauter_list_four">
-                            <li class="feature_item">
-                                <div class="icon_box"><i class="flaticon-checked"></i></div>
-                                <div class="title">Overseas education and study visa consultants.</div>
-                            </li>
-                            <li class="feature_item">
-                                <div class="icon_box"><i class="flaticon-open-book"></i></div>
-                                <div class="title">Top-ranked universities to the guarantee admissions.</div>
-                            </li>
-                        </ul>
-                        <div class="link-btn"><a href="{{ url('contact') }}" class="button-style-four">Contact <i class="fa-solid fa-arrow-right"></i></a></div>
+                        <h2>Rugby</h2>
+                        <p>Dudley   Senanayake College Colombo proudly stands as one of the leading schools in division B school rugby, with a strong record of consistent performance and sporting excellence.  Over the years, he Dudlians have built a formidable reputation through their participation in the Dialog Schools Rugby league Tournament, showcasing discipline, teamwork and determination.</p>
+                        <p>In 2024, the under 19 rugby team achieved a remarkable milestone by becoming Division Champions, marking a significant chapter in the collage’s rugby history.</p>
+                        <p>Building on this success, the under 19 team continued their impressive journey in 2025, securing the poison of Plate runners-up division B. a testament to their growth and competitive spirit.</p>
+                        <p>The under 1 6 rugby team also delivered commendable performances at the dialog schools rugby tournament 2025, finishing as Plate -Runners-up in Division 2. meanwhile the under 14 team demonstrated exceptional promises and consistency, advancing to the semifinals of the dialog schools rugby tournament and reflecting their strength of the college’s rugby development programme.</p>
+                        <p>As the rugby culture at Dudley Senanayake College continues to flourish, the young Dudlians remain committed to carrying forward a proud legacy of rugby excellence, sportsmanship and school pride.  </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="feature_section_home_three about_page">
-        <div class="container">
-            <div class="section_title_one centred mb_60">
-                <h5>How our services</h5>
-                <h2>Why Choose Liggeet</h2>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-book-1"></i></div>
-                            <div class="icon_box_two"><i class="flaticon-book-1"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="javascript:void(0);">Innovative Courses</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-graduated"></i></div>
-                            <div class="icon_box_two"><i class="flaticon-graduated"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="javascript:void(0);">Affordability</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-education"></i></div>
-                            <div class="icon_box_two"><i class="flaticon-education"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="javascript:void(0);">Academics</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-light-bulb"></i></div>
-                            <div class="icon_box_two"><i class="flaticon-light-bulb"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="javascript:void(0);">Inspiring Student Life</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
+                <div class="col-lg-12">
+                    <div class="about_right_content">
+                        <h2>Cricket</h2>
+                        <p>Cricket is a journey of learning Each challenge faced by under 15 and under 13 teams has helped them understand their strength s, recognize their areas for improvement, build confidence for future competitions. Year 2025 matches have laid a strong foundation for growth, resilience and maturity. The cricket teams stood united, supported one another, and represented Dudley with pride. The journey has begun. Proud of our Dudley Cricket. </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="funfact_section_home_one centred">
-        <div class="container">
-            <div class="inner_container">
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 funfact_block">
-                        <div class="funfact_block_one">
-                            <div class="inner_box">
-                                <div class="count_outer count_box">
-                                    <span class="count_text" data-speed="1500" data-stop="1021">0</span>
-                                </div>
-                                <p>Finished Sessions</p>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about_right_content">
+                        <h2>Football </h2>
+                        <p>Football is another popular game in Dudley Senanayake college which enhances the players discipline and commitment to the games. Over the Years the game was successfully carried by Dudlians by showing their true talents. Under the coach’s guidance young players are truly ready to show their sportsmanship through the game of football.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 funfact_block">
-                        <div class="funfact_block_one">
-                            <div class="inner_box">
-                                <div class="count_outer count_box">
-                                    <span class="count_text" data-speed="1500" data-stop="100">0</span><span>%</span>
-                                </div>
-                                <p>Satisfaction rate</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about_right_content">
+                        <h2>Karate</h2>
+                        <p>Karate at Dudley Senanayake College plays a vital role in shaping disciplined, confident, and physically strong students. Our karate   programme carefully designed for developing both physical and mental strength while instilling values such as respect, self -control, and perseverance.</p>
+                        <p>Through Karate, Dudley Senanayake College aims nurture students who are physically fit, mentally resilient, and morally strong, preparing them to face challenges both in sports and in life. Senanayake. The upcoming little Karate stars had won several school karate championships, medals in year 2024 ,2025 respectively.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 funfact_block">
-                        <div class="funfact_block_one">
-                            <div class="inner_box">
-                                <div class="count_outer count_box">
-                                    <span class="count_text" data-speed="1500" data-stop="2562">0</span><span>+</span>
-                                </div>
-                                <p>Enrolled Learners</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 funfact_block">
-                        <div class="funfact_block_one">
-                            <div class="inner_box">
-                                <div class="count_outer count_box">
-                                    <span class="count_text" data-speed="1500" data-stop="100">0</span>
-                                </div>
-                                <p>Online Instructors</p>
-                            </div>
-                        </div>
-                        <div class="centerd"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about_right_content">
+                        <h2>Netball</h2>
+                        <p>Netball is another important game for most of the girls in Dudley Senanayake Vidyalaya. Every pass, interception and goal reflected the girls dedication and love for Netball. Although the game is at the   beginning level our girls continue to grow stronger, gaining valuable experience and confidence with every match.</p>
                     </div>
                 </div>
             </div>

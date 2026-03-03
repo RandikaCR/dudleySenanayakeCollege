@@ -21,7 +21,7 @@
                                 <ul>
                                     <li><a href="#"><i class="flaticon-pin-1"></i>Dudley Senanayake College. Park Road, Colombo 05 - 00500 </a></li>
                                     <li><a href="tel:+94112589558"><i class="fa fa-phone"></i>+94 11 258 9558</a></li>
-                                    <li><a href="mailto:info@dudleysenanayakecollege.lk"><i class="flaticon-email-1"></i>info@dudleysenanayakecollege.lk</a></li>
+                                    {{--<li><a href="mailto:info@dudleysenanayakecollege.lk"><i class="flaticon-email-1"></i>info@dudleysenanayakecollege.lk</a></li>--}}
                                 </ul>
                             </div>
                         </div>

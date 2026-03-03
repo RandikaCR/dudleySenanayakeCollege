@@ -9,7 +9,7 @@
                                 <a href="{{ url('/') }}"><img src="{{ asset('assets/common/images/footer-logo.png') }}" alt=""></a>
                             </figure>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                        {{--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>--}}
                         <p>
                         <ul class="quick_links_list">
                             <li><a href="javascript:void(0);"><i class="flaticon-pin-1 me-2"></i>Dudley Senanayake College<br><span class="ms-4">Park Road</span><br><span class="ms-4">Colombo 05</span><br><span class="ms-4">00500</span></a></li>

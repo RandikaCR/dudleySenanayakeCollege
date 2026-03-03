@@ -77,4 +77,14 @@ class FrontendController extends Controller
             'sports' => $sports,
         ]);
     }
+
+    public function academic(Request $request)
+    {
+        return view('frontend.academic');
+    }
+
+    public function nonAcademic(Request $request)
+    {
+        return view('frontend.non-academic');
+    }
 }

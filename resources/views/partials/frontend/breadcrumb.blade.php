@@ -1,5 +1,5 @@
 <section class="page-title style_two">
-    <div class="bg_layer" style="background-image: url({{ asset('assets/frontend/images/background/bg-image-08.jpg') }});"></div>
+    <div class="bg_layer" style="background-image: url({{ asset('assets/common/images/uploads/bg-inner.jpg') }});"></div>
     <div class="container">
         <div class="content-box">
             <ul class="bread-crumb">

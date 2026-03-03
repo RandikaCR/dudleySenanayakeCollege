@@ -58,7 +58,7 @@ class NewsCategoriesController extends Controller
                 $save = NewsCategorories::find($id);
             }
             else{
-                $treq = ['screen' => 'news-cateogries', 'id' => ''];
+                $treq = ['screen' => 'news_categories', 'id' => ''];
                 $uuId = $this->generateUUId($treq);
 
                 $save = New NewsCategorories();
