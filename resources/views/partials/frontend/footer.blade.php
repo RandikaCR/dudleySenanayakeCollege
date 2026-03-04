@@ -1,4 +1,4 @@
-<footer class="main_footer">
+<footer class="main_footer" style="background: #202c38;">
     <div class="container">
         <div class="footer_middle">
             <div class="row">
@@ -26,14 +26,15 @@
                                 <h4 class="footer_widget_title">Quick Links</h4>
                                 <ul class="quick_links_list">
                                     <li><a href="{{ url('/about') }}">About School</a></li>
-                                    <li><a href="{{ url('/sports') }}">Sports</a></li>
+                                    <li><a href="{{ url('/history') }}">History</a></li>
+                                    <!-- <li><a href="{{ url('/sports') }}">Sports</a></li>
                                     <li><a href="{{ url('/news') }}">News</a></li>
-                                    <li><a href="{{ url('/events') }}">Events</a></li>
+                                    <li><a href="{{ url('/events') }}">Events</a></li> -->
                                     <li><a href="{{ url('/contact') }}">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                        <!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <div class="footer_widget links_widget">
                                 <h4 class="footer_widget_title">Links</h4>
                                 <ul class="links_list">
@@ -44,15 +45,13 @@
                                     <li><a href="javascript:void(0);">Services</a></li>
                                 </ul>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
                             <div class="footer_widget get_in_touch_widget">
                                 <h4 class="footer_widget_title">Get in touch</h4>
                                 <ul class="get_in_touch_list">
-                                    <li><a href="javascript:void(0);">Academics</a></li>
-                                    <li><a href="javascript:void(0);">Admissions</a></li>
-                                    <li><a href="javascript:void(0);">Programs</a></li>
-                                    <li><a href="javascript:void(0);">Careers</a></li>
+                                    <li><a href="{{ url('/academics') }}">Academics</a></li>
+                                    <li><a href="{{ url('/non-academics') }}">Non Academics</a></li>
                                 </ul>
                             </div>
                         </div>
