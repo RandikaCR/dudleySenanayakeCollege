@@ -21,7 +21,7 @@
 
 @section('content')
 
-    <section class="about_section_home_four sec_padding_140">
+    <section class="about_section_home_four sec_padding_140" style="padding-bottom: 60px;">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4 col-lg-12">
@@ -43,6 +43,21 @@
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-12">
+                <div class="section_title_one centred mb_60">
+                    <h5>School Flag</h5>
+                </div>
+                <div class="about_left_image clearfix">
+                    <figure class="about_image_four">
+                        <img class="img-fluid w-100" src="{{ asset('assets/common/images/school-flag.jpg') }}" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="feature_section_home_three about_page">
         <div class="container">

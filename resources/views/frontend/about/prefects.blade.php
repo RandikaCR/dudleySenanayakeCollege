@@ -93,7 +93,7 @@
                         <p>Deputy Head Prefect</p>
                     </div>
                 </div>
-     
+
             </div>
         </div>
     </section>

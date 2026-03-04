@@ -11,7 +11,7 @@
     $metaTitle = !empty($metaTitle) ? $metaTitle : 'Dudley Senanayake College. Colombo 05';
     $metaDescription = !empty($metaDescription) ? $metaDescription : '';
     $metaKeywords = !empty($metaKeywords) ? $metaKeywords : '';
-    $metaImage = !empty($metaImage) ? $metaImage : asset('assets/common/images/meta-image.jpg');
+    $metaImage = !empty($metaImage) ? $metaImage : asset('assets/common/images/school-flag.jpg');
     $metaUrl = !empty($metaUrl) ? $metaUrl : url('');
 @endphp
 
