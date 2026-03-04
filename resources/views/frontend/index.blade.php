@@ -71,17 +71,17 @@
     <section class="about_section_home_three">
         <div class="container">
             <div class="row">
-                <div class="col-xl-4 col-lg-12">
+                <div class="col-xl-5 col-lg-12">
                     <div class="about_left_image clearfix">
                         <figure class="about_image_four">
                             <img class="img-fluid w-100" src="{{ asset('assets/common/images/school-logo.png') }}" alt="">
                         </figure>
                     </div>
                 </div>
-                <div class="col-xl-8 col-lg-12">
+                <div class="col-xl-7 col-lg-12">
                     <div class="about_right_content">
-                        <h5>About School</h5>
-                        <h2>Dudley Senanayake College, Colombo 05.</h2>
+                        <h5>Principal's Message</h5>
+                        <h2>Ven. Ulapane Sumangala</h2>
                         <p>Located in the heart of Colombo, within Narahenpita Village in the Salpiti Koralaya – Palle Division of the Western Province, <span class="fw-bold">Dudley Senanayake College</span> has proudly served the community for 47 years. From its humble beginnings to its present status as a 1C Provincial Mixed School, our institution stands as a symbol of dedication, discipline, and continuous progress.</p>
                         
                         <div class="link-btn"><a href="{{ url('contact') }}" class="button-style-four">Contact <i class="fa-solid fa-arrow-right"></i></a></div>
