@@ -5,6 +5,10 @@
     $breadcrumbDescription = '';
 @endphp
 
+@section('page_title')
+    {{ $breadcrumbTitle }}
+@endsection
+
 @section('meta_info')
     @php
         $metaTitle = $sport_category->sport_category . ' - Dudley Senanayake College. Colombo 05';
@@ -14,6 +18,8 @@
         $metaUrl = url('sports/' . $sport_category->slug);
     @endphp
 @endsection
+
+
 
 @section('breadcrumb')
     @include('partials.frontend.breadcrumb')

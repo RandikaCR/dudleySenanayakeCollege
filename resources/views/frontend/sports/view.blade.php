@@ -5,6 +5,10 @@
     $breadcrumbDescription = '';
 @endphp
 
+@section('page_title')
+    {{ $breadcrumbTitle }}
+@endsection
+
 @section('meta_info')
     @php
         $metaTitle = $sport->en_title;

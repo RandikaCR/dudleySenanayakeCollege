@@ -5,6 +5,10 @@
     $breadcrumbDescription = '';
 @endphp
 
+@section('page_title')
+    {{ $breadcrumbTitle }}
+@endsection
+
 @section('meta_info')
     @php
         $metaTitle = 'Sports and Co-Curricular Excellence in Dudley Senanayake College. Colombo 05';

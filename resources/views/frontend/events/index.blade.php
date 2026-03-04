@@ -5,6 +5,10 @@
     $breadcrumbDescription = '';
 @endphp
 
+@section('page_title')
+    {{ $breadcrumbTitle }}
+@endsection
+
 @section('breadcrumb')
     @include('partials.frontend.breadcrumb')
 @endsection
