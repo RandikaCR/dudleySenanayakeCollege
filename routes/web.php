@@ -52,7 +52,12 @@ Route::group([ 'prefix' =>'/'], function () {
 
     Route::get('/set-localization/{lang}', [Frontend::class, 'localization'])->name('frontend.localization');
 
+    Route::post('/message/send', [Frontend::class, 'contactInquiry'])->name('frontend.contactInquiry');
+
     Route::post('/app-logout', [Frontend::class, 'appLogout'])->name('frontend.auth.appLogout');
+
+
+    Route::get('/test-mail', [Frontend::class, 'testMail'])->name('frontend.testMail');
 
 
 });

@@ -75,9 +75,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-12">
-                    <div class="about_left_image clearfix">
+                    <div class=" clearfix">
                         <figure class="about_image_four">
-                            <img class="img-fluid w-100" src="{{ asset('assets/common/images/uploads/principal.jpg') }}" alt="">
+                            <img class="img-fluid w-100 mb-4" src="{{ asset('assets/common/images/uploads/principal.jpg') }}" alt="">
                         </figure>
                     </div>
                 </div>

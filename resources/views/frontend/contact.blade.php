@@ -65,16 +65,16 @@
                 <h3 class="title mb_60">Send us a message</h3>
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-12 form-group">
-                        <input type="text" placeholder="First name *" name="fname" required="">
+                        <input type="text" placeholder="Name *" name="name" id="name" required="">
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-12 form-group">
-                        <input type="email" placeholder="Your Email *" name="email" required="">
+                        <input type="email" placeholder="Your Email *" name="email" id="email" required="">
                     </div>
                     <div class="col-xl-12 col-lg-12 col-md-12 form-group">
-                        <textarea placeholder="Your Comment" name="comment"></textarea>
+                        <textarea placeholder="Your Message *" name="message" id="message"></textarea>
                     </div>
                     <div class="col-xl-12 col-lg-12 col-md-12 form-group">
-                        <button type="submit" class="button-style-two">Submit <i class="flaticon-next"></i></button>
+                        <a href="javascript:void(0);" class="button-style-two send-message">Send Message <i class="flaticon-next"></i></a>
                     </div>
                 </div>
             </form>
@@ -83,4 +83,97 @@
     <!-- End Contact Form Section -->
 
 
+@endsection
+
+@section('script')
+    <script>
+
+        function validateEmail($email) {
+            // Regular expression for email validation
+            var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            // Return true if email matches regex, false otherwise
+            return regex.test($email);
+        }
+
+        $(document).ready(function (){
+            $('.send-message').on('click', function ($e){
+                $e.preventDefault();
+
+                $name = $('#name').val().trim();
+                $email = $('#email').val().trim();
+                $message = $('#message').val().trim();
+
+                $isInvalid = 0;
+
+                if($name == ''){
+                    $isInvalid++;
+                    Swal.fire('Unable to send...', 'Name is required!', 'error');
+                }else if($email == ''){
+                    $isInvalid++;
+                    Swal.fire('Unable to send...', 'Email is required!', 'error');
+                }else if(!validateEmail($email)){
+                    $isInvalid++;
+                    Swal.fire('Unable to send...', 'Invalid Email address!', 'error');
+                }else if($message == ''){
+                    $isInvalid++;
+                    Swal.fire('Unable to send...', 'Message is required!', 'error');
+                }
+
+                if($isInvalid == 0){
+                    Swal.fire({
+                        title: "Are you sure?",
+                        text: "You want to send this message!",
+                        icon: "warning",
+                        showCancelButton: !0,
+                        showLoaderOnConfirm: true,
+                        confirmButtonText: "Yes, Send it!",
+                        cancelButtonText: "No, cancel!",
+                        confirmButtonClass: "btn btn-primary w-xs me-2 mt-2",
+                        cancelButtonClass: "btn btn-secondary w-xs mt-2",
+                        buttonsStyling: !1,
+                        showCloseButton: !0,
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+
+                            setTimeout(function() {
+                                $.ajax({
+                                    url: "{{ route('frontend.contactInquiry') }}",
+                                    type: 'POST',
+                                    data: {
+                                        name: $name,
+                                        email: $email,
+                                        message: $message,
+                                        _token: csrf_token()
+                                    },
+                                    dataType: 'json',
+                                    beforeSend: function ($jqXHR, $obj) {
+                                        Swal.fire({
+                                            title: "Processing...",
+                                            text: "Please wait",
+                                            imageUrl: "{{ asset('assets/common/images/ajax-loader.gif') }}",
+                                            showConfirmButton: false,
+                                            allowOutsideClick: false
+                                        });
+                                    },
+                                    success: function ($response, $textStatus, $jqXHR) {
+                                        Swal.fire('Thank You!', 'Message has been sent successfully!. Your message will be reviewed shortly.', 'success');
+                                        setTimeout(function(){
+                                            location.reload();
+                                        },4000);
+                                    },
+                                    error: function ($jqXHR, $textStatus, $errorThrown) {
+                                        Swal.fire('Oops...', 'Something went wrong with the System!', 'error');
+                                    }
+                                });
+
+                            }, 50);
+                        }
+                    });
+                }
+
+
+            });
+        });
+
+    </script>
 @endsection
