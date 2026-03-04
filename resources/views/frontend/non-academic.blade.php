@@ -35,6 +35,25 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="about_right_content">
+                        <h2>Schools Rugby Team</h2>
+                        <p>Our powerful Rugby Team has consistently demonstrated excellence, determination, and true sportsmanship on the field.</p>
+                        <h5 class="fw-bold mb-3">Achievements</h5>
+                        <ul class="ms-5">
+                            <li class="fw-bold mb-2" style="list-style: disc;">Champions – Division 3, 2024 Inter School Dialog Premier League</li>
+                            <li class="fw-bold" style="list-style: disc;">Plate Runners-Up – Division 2, 2025 Inter School Dialog Premier League</li>
+                        </ul>
+                        <p class="mt-4">With back-to-back outstanding performances, our team has proven their strength and commitment to growth, rising through the divisions with confidence and pride.</p>
+
+                        <h5 class="fw-bold mb-3">2026 – The Next Challenge</h5>
+                        <p>In 2026, our team is set to compete in the Inter School Dialog Premier League Knockout Tournament. With determination, skill, and the unwavering support of our school community, they are ready to take on this exciting new challenge.</p>
+                        <p>Under the guidance and leadership of our esteemed Principal, Rev. Ulapane Sumangala Thero, together with the School Rugby MIC and the dedicated Teachers’ Committee, the team continues to grow from strength to strength — both on and off the field.</p>
+                        <p>We are proud of our players, coaches, and supporters who continue to build a legacy of excellence in school rugby.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="about_right_content">
                         <h2>Our Commitment</h2>
                         <p>From four classrooms in 1978 to a fully developed provincial mixed school today, Dudley Senanayake College continues its journey with pride and purpose. We remain committed to providing quality education, modern resources, strong values, and opportunities for every student to grow academically, physically, and morally.</p>
                         <p>We warmly welcome you to be a part of our continuing story of excellence.</p>

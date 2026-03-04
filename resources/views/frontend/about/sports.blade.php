@@ -23,8 +23,17 @@
 
     <section class="about_section_home_four sec_padding_140">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row mb-5">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="blog_block_one mb_30">
+                        <div class="inner_box">
+                            <figure class="blog_image">
+                                <img class="w-100" src="{{ asset('assets/common/images/uploads/s-rugby.jpg') }}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12">
                     <div class="about_right_content">
                         <h2>Rugby</h2>
                         <p>Dudley   Senanayake College Colombo proudly stands as one of the leading schools in division B school rugby, with a strong record of consistent performance and sporting excellence.  Over the years, he Dudlians have built a formidable reputation through their participation in the Dialog Schools Rugby league Tournament, showcasing discipline, teamwork and determination.</p>
@@ -35,24 +44,34 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row mb-5">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="blog_block_one mb_30">
+                        <div class="inner_box">
+                            <figure class="blog_image">
+                                <img class="w-100" src="{{ asset('assets/common/images/uploads/s-cricket.jpg') }}" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12">
                     <div class="about_right_content">
                         <h2>Cricket</h2>
                         <p>Cricket is a journey of learning Each challenge faced by under 15 and under 13 teams has helped them understand their strength s, recognize their areas for improvement, build confidence for future competitions. Year 2025 matches have laid a strong foundation for growth, resilience and maturity. The cricket teams stood united, supported one another, and represented Dudley with pride. The journey has begun. Proud of our Dudley Cricket. </p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="about_right_content">
-                        <h2>Football </h2>
-                        <p>Football is another popular game in Dudley Senanayake college which enhances the players discipline and commitment to the games. Over the Years the game was successfully carried by Dudlians by showing their true talents. Under the coach’s guidance young players are truly ready to show their sportsmanship through the game of football.</p>
+            <div class="row mb-5">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="blog_block_one mb_30">
+                        <div class="inner_box">
+                            <figure class="blog_image">
+                                <img class="w-100" src="{{ asset('assets/common/images/uploads/s-karate.jpg') }}" alt="">
+                            </figure>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xl-6 col-lg-12">
                     <div class="about_right_content">
                         <h2>Karate</h2>
                         <p>Karate at Dudley Senanayake College plays a vital role in shaping disciplined, confident, and physically strong students. Our karate   programme carefully designed for developing both physical and mental strength while instilling values such as respect, self -control, and perseverance.</p>
@@ -60,14 +79,21 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row mb-5">
+                <div class="col-xl-6 col-lg-12">
+                    <div class="about_right_content">
+                        <h2>Football </h2>
+                        <p>Football is another popular game in Dudley Senanayake college which enhances the players discipline and commitment to the games. Over the Years the game was successfully carried by Dudlians by showing their true talents. Under the coach’s guidance young players are truly ready to show their sportsmanship through the game of football.</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12">
                     <div class="about_right_content">
                         <h2>Netball</h2>
-                        <p>Netball is another important game for most of the girls in Dudley Senanayake Vidyalaya. Every pass, interception and goal reflected the girls dedication and love for Netball. Although the game is at the   beginning level our girls continue to grow stronger, gaining valuable experience and confidence with every match.</p>
+                        <p>Netball is another important game for most of the girls in Dudley Senanayake College. Every pass, interception and goal reflected the girls dedication and love for Netball. Although the game is at the   beginning level our girls continue to grow stronger, gaining valuable experience and confidence with every match.</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 @endsection

@@ -63,9 +63,9 @@
             <div class="copyright_text_home_one">&copy; {{ date('Y', time()) }} <a href="{{ url('/') }}">Admin @ Dudley Senanayake College. Colombo 05.</a> All Rights Reserved</div>
             <div class="social_links_style_two">
                 <ul>
-                    <li><a href="#"><i class="flaticon-facebook"></i></a></li>
-                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
-                    <li><a href="#"><i class="flaticon-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/dudleycolombo5/" target="_blank"><i class="flaticon-facebook"></i></a></li>
+                    {{--<li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                    <li><a href="#"><i class="flaticon-youtube"></i></a></li>--}}
                 </ul>
             </div>
         </div>

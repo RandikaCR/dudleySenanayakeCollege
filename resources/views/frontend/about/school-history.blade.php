@@ -25,17 +25,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-12">
-                    <div class="about_left_image clearfix">
-                        <figure class="about_image_four">
-                            <img src="{{ asset('assets/frontend/images/resource/about-image-03.jpg') }}" alt="">
-                        </figure>
+                    <div class="blog_block_one mb_30">
+                        <div class="inner_box">
+                            <figure class="blog_image">
+                                <img class="w-100" src="{{ asset('assets/common/images/uploads/h-1.jpg') }}" alt="">
+                            </figure>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-12">
                     <div class="about_right_content">
                         <h5>About School</h5>
                         <h2>Since 1978</h2>
-                        <p>The school was established on 4th April 1978 under the concept of <span class="fw-bold">former President Ranasinghe Premadasa</span> with the aim of providing quality education to the children of government employees working in and around Narahenpita. At its inception, the school functioned as a boys’ school, mainly serving families who were unable to secure admission to leading national schools.</p>
+                        <p>The school was established on 4<sup>th</sup> April 1978 under the concept of <span class="fw-bold">former President Ranasinghe Premadasa</span> with the aim of providing quality education to the children of government employees working in and around Narahenpita. At its inception, the school functioned as a boys’ school, mainly serving families who were unable to secure admission to leading national schools.</p>
                         <p>The school began in a single building with only four classrooms. Shortly afterwards, four garage rooms belonging to Anderson Flats were generously provided to accommodate Grade 1 classes. The land, which measures 1 acre, 1 rood, and 2 perches, was once a wetland and has since been transformed into a vibrant centre of learning. The first principal, Mrs. Hemawellage, laid a strong foundation of discipline, commitment, and academic excellence.</p>
                         <p>A significant milestone in our journey was the commencement of our first Advanced Level batch in the year 2000. Since then, the school has steadily expanded its academic offerings and facilities.</p>
 

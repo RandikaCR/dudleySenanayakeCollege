@@ -42,10 +42,13 @@
                         <p>Our students come from multicultural backgrounds and work together in unity and cooperation. While the school maintains a strong Buddhist foundation that promotes discipline and moral values, it fosters respect and harmony among students of all religions and backgrounds.</p>
                         <p>We have been fortunate to be guided by dedicated leaders throughout our history:</p>
                         <ul class="ms-5">
-                            <li class="fw-bold" style="list-style: disc;">Mrs. Hemawellage – Founder Principal</li>
-                            <li class="fw-bold" style="list-style: disc;">Mr. Athuwedage</li>
-                            <li class="fw-bold" style="list-style: disc;">Mr. S.D. Jayasinghe</li>
-                            <li class="fw-bold" style="list-style: disc;">Ven. Ulapane Sumangala – Current Principal</li>
+                            <li class="fw-bold" style="list-style: disc;">Mrs. Hema Wellage – Founder Principal (1978.04.30 – 1989.01.01)</li>
+                            <li class="fw-bold" style="list-style: disc;">Mrs. V. K. C. Sirithunga (1989.01.01 – 1989.10.02)</li>
+                            <li class="fw-bold" style="list-style: disc;">Mr. S. Athuwedage (1989.10.02 – 1993.09.01)</li>
+                            <li class="fw-bold" style="list-style: disc;">Mr. N. H. M. Cooray (1993.09.01 – 1994.01.05)</li>
+                            <li class="fw-bold" style="list-style: disc;">Mr. S. D. Jayasinghe (1994.01.05 -  2008.06.30)</li>
+                            <li class="fw-bold" style="list-style: disc;">Mrs. P. A. W. Samarasinghe (2008.07.30 – 2016.03.11)</li>
+                            <li class="fw-bold" style="list-style: disc;">Ven. Ulapane Sumangala  (2016.03.11 - Current Principal)</li>
                         </ul>
                     </div>
                 </div>

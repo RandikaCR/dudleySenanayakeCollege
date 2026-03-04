@@ -74,7 +74,7 @@
                 <div class="col-xl-5 col-lg-12">
                     <div class="about_left_image clearfix">
                         <figure class="about_image_four">
-                            <img class="img-fluid w-100" src="{{ asset('assets/common/images/school-logo.png') }}" alt="">
+                            <img class="img-fluid w-100" src="{{ asset('assets/common/images/uploads/principal.jpg') }}" alt="">
                         </figure>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <h5>Principal's Message</h5>
                         <h2>Ven. Ulapane Sumangala</h2>
                         <p>Located in the heart of Colombo, within Narahenpita Village in the Salpiti Koralaya – Palle Division of the Western Province, <span class="fw-bold">Dudley Senanayake College</span> has proudly served the community for 47 years. From its humble beginnings to its present status as a 1C Provincial Mixed School, our institution stands as a symbol of dedication, discipline, and continuous progress.</p>
-                        
+
                         <div class="link-btn"><a href="{{ url('contact') }}" class="button-style-four">Contact <i class="fa-solid fa-arrow-right"></i></a></div>
                     </div>
                 </div>
@@ -175,127 +175,44 @@
     <section class="studies_section_home_three sec_padding_110">
         <div class="container">
             <div class="section_title_one centred mb_60">
-                <h5>Student stadies</h5>
-                <h2>Our Studies</h2>
+                <h5>Academic & Non Academic</h5>
+                <h2>Academic & Non Academic Excellence and Facilities</h2>
+                <p class="mt-4">Today, Dudley Senanayake College provides both English and Sinhala medium education from Grade 6 to Grade 10, along with a well-established Advanced Level section. Over the years, we have produced students who have excelled in fields such as medicine, engineering, chemistry, education, and many other professional sectors.</p>
             </div>
-            <div class="four_item_carousel owl-carousel owl-theme owl-dots-none">
-                <div class="studies_block">
-                    <div class="studies_block_one mb_50">
+            <div class="row">
+                <div class="col-xl-4 col-xl-6 col-md-6 col-sm-12 block_block">
+                    <div class="blog_block_one mb_30">
                         <div class="inner_box">
-                            <figure class="image_box">
-                                <a href="programs.html"><i class="flaticon-architect"></i></a>
+                            <figure class="blog_image">
+                                <img src="{{ asset('assets/common/images/uploads/home-2.jpg') }}" alt="">
                             </figure>
-                            <div class="lower_content">
-                                <div class="inner">
-                                    <h3><a href="programs.html">Architecture</a></h3>
-                                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="studies_block">
-                    <div class="studies_block_one mb_50">
+                <div class="col-xl-4 col-xl-6 col-md-6 col-sm-12 block_block">
+                    <div class="blog_block_one mb_30">
                         <div class="inner_box">
-                            <figure class="image_box">
-                                <a href="programs.html"><i class="flaticon-design-thinking"></i></a>
+                            <figure class="blog_image">
+                                <img src="{{ asset('assets/common/images/uploads/home-4.jpg') }}" alt="">
                             </figure>
-                            <div class="lower_content">
-                                <div class="inner">
-                                    <h3><a href="programs.html">Design</a></h3>
-                                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="studies_block">
-                    <div class="studies_block_one mb_50">
+                <div class="col-xl-4 col-xl-6 col-md-6 col-sm-12 block_block">
+                    <div class="blog_block_one mb_30">
                         <div class="inner_box">
-                            <figure class="image_box">
-                                <a href="programs.html"><i class="flaticon-engineering"></i></a>
+                            <figure class="blog_image">
+                                <img src="{{ asset('assets/common/images/uploads/home-3.jpg') }}" alt="">
                             </figure>
-                            <div class="lower_content">
-                                <div class="inner">
-                                    <h3><a href="programs.html">Engineering</a></h3>
-                                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="studies_block">
-                    <div class="studies_block_one mb_50">
+                <div class="col-xl-4 col-xl-6 col-md-6 col-sm-12 block_block">
+                    <div class="blog_block_one mb_30">
                         <div class="inner_box">
-                            <figure class="image_box">
-                                <a href="programs.html"><i class="flaticon-education"></i></a>
+                            <figure class="blog_image">
+                                <img src="{{ asset('assets/common/images/uploads/home-1.jpg') }}" alt="">
                             </figure>
-                            <div class="lower_content">
-                                <div class="inner">
-                                    <h3><a href="programs.html">Education</a></h3>
-                                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies_block">
-                    <div class="studies_block_one mb_50">
-                        <div class="inner_box">
-                            <figure class="image_box">
-                                <a href="programs.html"><i class="flaticon-architect"></i></a>
-                            </figure>
-                            <div class="lower_content">
-                                <div class="inner">
-                                    <h3><a href="programs.html">Architecture</a></h3>
-                                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies_block">
-                    <div class="studies_block_one mb_50">
-                        <div class="inner_box">
-                            <figure class="image_box">
-                                <a href="programs.html"><i class="flaticon-system"></i></a>
-                            </figure>
-                            <div class="lower_content">
-                                <div class="inner">
-                                    <h3><a href="programs.html">IT</a></h3>
-                                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies_block">
-                    <div class="studies_block_one mb_50">
-                        <div class="inner_box">
-                            <figure class="image_box">
-                                <a href="programs.html"><i class="flaticon-engineering"></i></a>
-                            </figure>
-                            <div class="lower_content">
-                                <div class="inner">
-                                    <h3><a href="programs.html">Health Care</a></h3>
-                                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="studies_block">
-                    <div class="studies_block_one mb_50">
-                        <div class="inner_box">
-                            <figure class="image_box">
-                                <a href="programs.html"><i class="flaticon-economy"></i></a>
-                            </figure>
-                            <div class="lower_content">
-                                <div class="inner">
-                                    <h3><a href="programs.html">Economy</a></h3>
-                                    <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

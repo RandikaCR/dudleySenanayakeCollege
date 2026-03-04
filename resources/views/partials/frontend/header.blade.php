@@ -28,9 +28,9 @@
                         <div class="header_right_area">
                             <div class="social_links_style_one">
                                 <ul>
-                                    <li><a href="#"><i class="flaticon-facebook"></i></a></li>
-                                    <li><a href="#"><i class="flaticon-instagram"></i></a></li>
-                                    <li><a href="#"><i class="flaticon-youtube"></i></a></li>
+                                    <li><a href="https://www.facebook.com/dudleycolombo5/" target="_blank"><i class="flaticon-facebook"></i></a></li>
+                                    {{--<li><a href="#"><i class="flaticon-instagram"></i></a></li>
+                                    <li><a href="#"><i class="flaticon-youtube"></i></a></li>--}}
                                 </ul>
                             </div>
                             <div class="log_in_button">
