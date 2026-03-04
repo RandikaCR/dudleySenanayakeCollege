@@ -6,9 +6,11 @@
     <!-- Banner Home Three -->
     <section class="banner_home_three">
         <div class="banner-three-carousel owl-carousel owl-theme owl-nav-none">
-            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_4.jpg') }})">
+            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_5.png') }})">
                 <div class="container">
-                    <div class="content-box">
+                    <div class="content-box text-center">
+                        <h3 class="text-capitalize" style="background: none; padding-bottom: 10px;">Proudly celebrating our</h3>
+                        <h1 class="text-capitalize">48<sup>th</sup> Anniversary</h1>
                         {{--<h3>Sub title goes here</h3>
                         <h1>Title goes here</h1>
                         <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
@@ -18,7 +20,9 @@
             </div>
             <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_1.jpg') }})">
                 <div class="container">
-                    <div class="content-box">
+                    <div class="content-box text-center">
+                        <h3 class="text-capitalize" style="background: none; padding-bottom: 10px;">Proudly celebrating our</h3>
+                        <h1 class="text-capitalize">48<sup>th</sup> Anniversary</h1>
                         {{--<h3>Sub title goes here</h3>
                         <h1>Title goes here</h1>
                         <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
@@ -28,7 +32,9 @@
             </div>
             <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_3.jpg') }})">
                 <div class="container">
-                    <div class="content-box">
+                    <div class="content-box text-center">
+                        <h3 class="text-capitalize" style="background: none; padding-bottom: 10px;">Proudly celebrating our</h3>
+                        <h1 class="text-capitalize">48<sup>th</sup> Anniversary</h1>
                         {{--<h3>Sub title goes here</h3>
                         <h1>Title goes here</h1>
                         <h4 class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</h4>
@@ -36,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_2.jpg') }})">
+            <!-- <div class="slide" style="background-image:url({{ asset('assets/common/images/uploads/banner_2.jpg') }})">
                 <div class="container">
                     <div class="content-box">
                         {{--<h3>Sub title goes here</h3>
@@ -45,7 +51,7 @@
                         <div class="link-button"><a href="{{ url('/') }}" class="button-style-four">Read more <i class="fa-solid fa-arrow-right"></i></a></div>--}}
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- End Banner Home Three -->
@@ -54,54 +60,8 @@
     <section class="feature_section_home_three" style="background-image: url({{ asset('assets/common/images/uploads/logo_shape.png') }});">
         <div class="container">
             <div class="section_title_one centred mb_60">
-                <h5>How our services</h5>
-                <h2>Why Choose Liggeet {{ __('main.next') }}</h2>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-book-1"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="programs.html">Innovative Courses</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-graduated"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="programs.html">Affordability</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-education"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="programs.html">Academics</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <div class="feature_block_three centred">
-                        <div class="feature_inner_box">
-                            <div class="icon_box"><i class="flaticon-light-bulb"></i></div>
-                            <div class="feature_content">
-                                <h4><a href="programs.html">Inspiring Student Life</a></h4>
-                                <p>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h5>Welcome to School</h5>
+                <h2 style="font-style: italic;">"විදු මගින් සරු බවට - Prosperity through Education"</h2>
             </div>
         </div>
     </section>
@@ -111,17 +71,20 @@
     <section class="about_section_home_three">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12">
-                    <div class="about_left_content">
-                        <h5>About The Liggeet</h5>
-                        <h2>We are one of the largest, most universities in the world.</h2>
+                <div class="col-xl-4 col-lg-12">
+                    <div class="about_left_image clearfix">
+                        <figure class="about_image_four">
+                            <img class="img-fluid w-100" src="{{ asset('assets/common/images/school-logo.png') }}" alt="">
+                        </figure>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-12">
+                <div class="col-xl-8 col-lg-12">
                     <div class="about_right_content">
-                        <p>Etiam in arcu dictum, maximus libero ac, porttitor ante. Mauris in ultricies odio, id porttitor nulla. Phasellus tristique vehicula eros id hendrerit. Interdum et malesuada fames ac ante ipsumisth primis in faucibus. Maecenas ultricies finibus est, non aliquet ligula suscipit id. Nulla a mi velit. Proin sollicitudin consectetur gravida.</p>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed velv ipsum ultrices, congue eros quis,</p>
-                        <div class="link-btn"><a href="resgister.html" class="button-style-four">Free Join Us <i class="fa-solid fa-arrow-right"></i></a></div>
+                        <h5>About School</h5>
+                        <h2>Dudley Senanayake College, Colombo 05.</h2>
+                        <p>Located in the heart of Colombo, within Narahenpita Village in the Salpiti Koralaya – Palle Division of the Western Province, <span class="fw-bold">Dudley Senanayake College</span> has proudly served the community for 47 years. From its humble beginnings to its present status as a 1C Provincial Mixed School, our institution stands as a symbol of dedication, discipline, and continuous progress.</p>
+                        
+                        <div class="link-btn"><a href="{{ url('contact') }}" class="button-style-four">Contact <i class="fa-solid fa-arrow-right"></i></a></div>
                     </div>
                 </div>
             </div>
@@ -143,7 +106,7 @@
     <!-- End Services Section Home Two -->
 
     <!-- Funfact Section Home Three -->
-    <section class="funfact_section_home_three">
+    <!-- <section class="funfact_section_home_three">
         <div class="container">
             <div class="funfact_inner_home_three">
                 <div class="row clearfix">
@@ -205,7 +168,7 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
     <!-- End Funfact Section Home Three -->
 
     <!-- Our Studies Section Home Three -->
@@ -342,7 +305,7 @@
     <!-- End Our Studies Section Home Three -->
 
     <!-- Apply Admission Section Home Three -->
-    <section class="apply_admission_home_three">
+    <!-- <section class="apply_admission_home_three">
         <div class="container">
             <div class="apply_admission_inner">
                 <div class="icon_box">
@@ -357,11 +320,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Apply Admission Section Home Three -->
 
     <!-- Programs Section Home Three -->
-    <section class="programs_section_home_three">
+    <!-- <section class="programs_section_home_three">
         <div class="container-fulid">
             <div class="row clearfix m-0">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 programs_block p-0">
@@ -426,11 +389,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Programs Section Home Three -->
 
     <!-- Process Section Home Three -->
-    <section class="process_section_home_three">
+    <!-- <section class="process_section_home_three">
         <div class="container">
             <div class="section_title_one centred mb_60">
                 <h5>process</h5>
@@ -472,11 +435,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Process Section Home Three -->
 
     <!-- Blog Section Home One -->
-    <section class="blog_section_home_one style_two sec_padding_120">
+    <!-- <section class="blog_section_home_one style_two sec_padding_120">
         <div class="container">
             <div class="outer_box">
                 <div class="section_title_two mb_60">
@@ -510,7 +473,7 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Blog Section Home One -->
 
 @endsection

@@ -39,24 +39,13 @@
                         <p>The school began in a single building with only four classrooms. Shortly afterwards, four garage rooms belonging to Anderson Flats were generously provided to accommodate Grade 1 classes. The land, which measures 1 acre, 1 rood, and 2 perches, was once a wetland and has since been transformed into a vibrant centre of learning. The first principal, Mrs. Hemawellage, laid a strong foundation of discipline, commitment, and academic excellence.</p>
                         <p>A significant milestone in our journey was the commencement of our first Advanced Level batch in the year 2000. Since then, the school has steadily expanded its academic offerings and facilities.</p>
 
-                        <ul class="feauter_list_four">
-                            <li class="feature_item">
-                                <div class="icon_box"><i class="flaticon-checked"></i></div>
-                                <div class="title">Overseas education and study visa consultants.</div>
-                            </li>
-                            <li class="feature_item">
-                                <div class="icon_box"><i class="flaticon-open-book"></i></div>
-                                <div class="title">Top-ranked universities to the guarantee admissions.</div>
-                            </li>
-                        </ul>
-                        <div class="link-btn"><a href="{{ url('contact') }}" class="button-style-four">Contact <i class="fa-solid fa-arrow-right"></i></a></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="feature_section_home_three about_page">
+    <!-- <section class="feature_section_home_three about_page">
         <div class="container">
             <div class="section_title_one centred mb_60">
                 <h5>How our services</h5>
@@ -113,9 +102,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="funfact_section_home_one centred">
+    <!-- <section class="funfact_section_home_one centred">
         <div class="container">
             <div class="inner_container">
                 <div class="row clearfix">
@@ -163,5 +152,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 @endsection

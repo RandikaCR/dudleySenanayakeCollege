@@ -36,16 +36,7 @@
                         <h5>About School</h5>
                         <h2>Dudley Senanayake College, Colombo 05.</h2>
                         <p>Located in the heart of Colombo, within Narahenpita Village in the Salpiti Koralaya – Palle Division of the Western Province, <span class="fw-bold">Dudley Senanayake College</span> has proudly served the community for 47 years. From its humble beginnings to its present status as a 1C Provincial Mixed School, our institution stands as a symbol of dedication, discipline, and continuous progress.</p>
-                        <ul class="feauter_list_four">
-                            <li class="feature_item">
-                                <div class="icon_box"><i class="flaticon-checked"></i></div>
-                                <div class="title">Overseas education and study visa consultants.</div>
-                            </li>
-                            <li class="feature_item">
-                                <div class="icon_box"><i class="flaticon-open-book"></i></div>
-                                <div class="title">Top-ranked universities to the guarantee admissions.</div>
-                            </li>
-                        </ul>
+                        
                         <div class="link-btn"><a href="{{ url('contact') }}" class="button-style-four">Contact <i class="fa-solid fa-arrow-right"></i></a></div>
                     </div>
                 </div>
@@ -90,53 +81,4 @@
         </div>
     </section>
 
-    <section class="funfact_section_home_one centred">
-        <div class="container">
-            <div class="inner_container">
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-6 col-sm-12 funfact_block">
-                        <div class="funfact_block_one">
-                            <div class="inner_box">
-                                <div class="count_outer count_box">
-                                    <span class="count_text" data-speed="1500" data-stop="1021">0</span>
-                                </div>
-                                <p>Finished Sessions</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 funfact_block">
-                        <div class="funfact_block_one">
-                            <div class="inner_box">
-                                <div class="count_outer count_box">
-                                    <span class="count_text" data-speed="1500" data-stop="100">0</span><span>%</span>
-                                </div>
-                                <p>Satisfaction rate</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 funfact_block">
-                        <div class="funfact_block_one">
-                            <div class="inner_box">
-                                <div class="count_outer count_box">
-                                    <span class="count_text" data-speed="1500" data-stop="2562">0</span><span>+</span>
-                                </div>
-                                <p>Enrolled Learners</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 funfact_block">
-                        <div class="funfact_block_one">
-                            <div class="inner_box">
-                                <div class="count_outer count_box">
-                                    <span class="count_text" data-speed="1500" data-stop="100">0</span>
-                                </div>
-                                <p>Online Instructors</p>
-                            </div>
-                        </div>
-                        <div class="centerd"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 @endsection

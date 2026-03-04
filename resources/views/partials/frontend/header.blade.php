@@ -82,7 +82,7 @@
                                                 <li><a href="{{ url('/non-academics') }}">Non-Academics</a></li>
                                             </ul>
                                         </li>
-                                        <li class="dropdown {{ (request()->segment(1) == 'sports' || request()->segment(1) == 'sport') ? 'current' : '' }}"><a href="{{ url('/sports') }}">Sports</a>
+                                        <!-- <li class="dropdown {{ (request()->segment(1) == 'sports' || request()->segment(1) == 'sport') ? 'current' : '' }}"><a href="{{ url('/sports') }}">Sports</a>
                                             <ul>
                                                 <li><a href="{{ url('/sports') }}">All Sports</a></li>
                                                 @foreach($navSports as $ns)
@@ -91,7 +91,7 @@
                                             </ul>
                                         </li>
                                         <li class="{{ (request()->segment(1) == 'events' || request()->segment(1) == 'event') ? 'current' : '' }}"><a href="{{ url('/events') }}">Events</a></li>
-                                        <li class="{{ (request()->segment(1) == 'news') ? 'current' : '' }}"><a href="{{ url('/news') }}">News</a></li>
+                                        <li class="{{ (request()->segment(1) == 'news') ? 'current' : '' }}"><a href="{{ url('/news') }}">News</a></li> -->
                                         <li class="{{ (request()->segment(1) == 'contact') ? 'current' : '' }}"><a href="{{ url('/contact') }}">Contact</a></li>
                                     </ul>
                                 </div>
@@ -144,9 +144,9 @@
                 </ul>
             </div>
             <ul class="social-links centred">
-                <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
-                <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
-                <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                <li><a href="javascript:void(0);"><span class="fab fa-facebook-square"></span></a></li>
+                <li><a href="javascript:void(0);"><span class="fab fa-instagram"></span></a></li>
+                <li><a href="javascript:void(0);"><span class="fab fa-youtube"></span></a></li>
             </ul>
         </nav>
     </div>
