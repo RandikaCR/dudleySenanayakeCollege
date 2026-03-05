@@ -281,16 +281,6 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
                         <figure class="image_box">
-                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/user_square.jpg') }}" alt=""></a>
-                        </figure>
-                        <h4 class="text-uppercase"><a href="javascript:void(0);">Janani Madushika Nanayakkara</a></h4>
-                        <p class="text-primary fw-bold">Degree</p>
-                        <p class="text-primary fw-bold">Degree</p>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
-                    <div class="career_feature_block centred">
-                        <figure class="image_box">
                             <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/DSC7822.jpg') }}" alt=""></a>
                         </figure>
                         <h4 class="text-uppercase"><a href="javascript:void(0);">D.A.R Kavinda</a></h4>
