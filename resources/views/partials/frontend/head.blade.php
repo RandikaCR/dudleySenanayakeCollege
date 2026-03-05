@@ -71,6 +71,15 @@
             height: 600px;
         }
     }
+
+
+
+    @media only screen and (max-width: 1199px){
+        .header-mobile-menu-area{
+            display: flex;
+            justify-content: end;
+        }
+    }
 </style>
 
 @yield('css')

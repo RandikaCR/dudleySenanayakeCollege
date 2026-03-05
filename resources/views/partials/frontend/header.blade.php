@@ -2,19 +2,19 @@
     <div class="container-fulid">
         <div class="header_outer_box_home_four">
             <div class="row">
-                <div class="col-xl-2 col-lg-12">
+                <div class="col-xl-2 col-md-12 col-9">
                     <div class="header_logo">
                         <figure>
                             <a href="{{ url('/') }}"><img src="{{ asset('assets/common/images/logo-2.png') }}" alt=""></a>
                         </figure>
                     </div>
-                    <div class="header_logo_mobile">
+                    <div class="header_logo_mobile" style="margin: 0;">
                         <figure>
                             <a href="{{ url('/') }}"><img src="{{ asset('assets/common/images/logo.png') }}" alt=""></a>
                         </figure>
                     </div>
                 </div>
-                <div class="col-xl-10 col-lg-12">
+                <div class="col-xl-10 col-md-12 col-3 header-mobile-menu-area">
                     <div class="header_top_home_four">
                         <div class="header_left_area">
                             <div class="header_info_box">
