@@ -89,7 +89,9 @@
                         </figure>
                         <h4 class="text-uppercase"><a href="javascript:void(0);">A.I Pallewela</a></h4>
                         <p class="fw-bold">Section Head - O/L Section<br>(Grade 9-11)</p>
-                        {{--<p class="text-primary fw-bold">BSc - Open University of Sri Lanka</p>--}}
+                        <p class="text-primary fw-bold">G.C.E.(A/L)</p>
+                        <p class="text-primary fw-bold">National Diploma in Teaching</p>
+                        <p class="text-primary fw-bold">BED in Teaching English</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
