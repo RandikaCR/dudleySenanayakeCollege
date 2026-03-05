@@ -435,8 +435,8 @@
                             <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/DSC7841.jpg') }}" alt=""></a>
                         </figure>
                         <h4 class="text-uppercase"><a href="javascript:void(0);">Ruwani munasinghe</a></h4>
-                        {{--<p class="text-primary fw-bold">G.C.E (A/L)</p>
-                        <p class="text-primary fw-bold">National diploma in Teaching</p>--}}
+                        <p class="text-primary fw-bold">BA Degree</p>
+                        <p class="text-primary fw-bold">Pre Service Teacher Training</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
