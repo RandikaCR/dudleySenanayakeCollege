@@ -19,6 +19,25 @@
     @endphp
 @endsection
 
+@section('css')
+
+    <style type="text/css">
+
+        .career_feature_block .image_box{
+            margin-bottom: 15px;
+        }
+
+        .career_feature_block .image_box img {
+            border-radius: 5px;
+        }
+
+        .career_feature_block h4 a{
+            margin-bottom: 0;
+        }
+
+    </style>
+@endsection
+
 @section('breadcrumb')
     @include('partials.frontend.breadcrumb')
 @endsection
@@ -35,19 +54,19 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
                         <figure class="image_box">
-                            <a href="#"><img src="{{ asset('assets/common/images/user-square.jpg') }}" alt=""></a>
+                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/p-1.jpg') }}" alt=""></a>
                         </figure>
-                        <h4><a href="#">MALKA RASAANJANA</a></h4>
-                        <p>Head Prefect</p>
+                        <h4 class="text-uppercase"><a href="javascript:void(0);">MALKA RASAANJANA</a></h4>
+                        <p class="text-primary fw-bold">Head Prefect</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
                         <figure class="image_box">
-                            <a href="#"><img src="{{ asset('assets/common/images/user-square.jpg') }}" alt=""></a>
+                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/p-2.jpg') }}" alt=""></a>
                         </figure>
-                        <h4><a href="#">MALSHI AMAYA</a></h4>
-                        <p>Head Prefect</p>
+                        <h4 class="text-uppercase"><a href="javascript:void(0);">MALSHI AMAYA</a></h4>
+                        <p class="text-primary fw-bold">Head Prefect</p>
                     </div>
                 </div>
             </div>
@@ -58,19 +77,19 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
                         <figure class="image_box">
-                            <a href="#"><img src="{{ asset('assets/common/images/user-square.jpg') }}" alt=""></a>
+                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/p-3.jpg') }}" alt=""></a>
                         </figure>
-                        <h4><a href="#">MINARU NIMTHARU</a></h4>
-                        <p>Games Captain</p>
+                        <h4 class="text-uppercase"><a href="javascript:void(0);">MINARU NIMTHARU</a></h4>
+                        <p class="text-primary fw-bold">Games Captain</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
                         <figure class="image_box">
-                            <a href="#"><img src="{{ asset('assets/common/images/user-square.jpg') }}" alt=""></a>
+                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/p-4.jpg') }}" alt=""></a>
                         </figure>
-                        <h4><a href="#">RANUGI DAHAMSA</a></h4>
-                        <p>Games Captain</p>
+                        <h4 class="text-uppercase"><a href="javascript:void(0);">RANUGI DAHAMSA</a></h4>
+                        <p class="text-primary fw-bold">Games Captain</p>
                     </div>
                 </div>
             </div>
@@ -82,19 +101,19 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
                         <figure class="image_box">
-                            <a href="#"><img src="{{ asset('assets/common/images/user-square.jpg') }}" alt=""></a>
+                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/p-5.jpg') }}" alt=""></a>
                         </figure>
-                        <h4><a href="#">NIJAL AKASH</a></h4>
-                        <p>Deputy Head Prefect</p>
+                        <h4 class="text-uppercase"><a href="javascript:void(0);">NIJAL AKASH</a></h4>
+                        <p class="text-primary fw-bold">Deputy Head Prefect</p>
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
                         <figure class="image_box">
-                            <a href="#"><img src="{{ asset('assets/common/images/user-square.jpg') }}" alt=""></a>
+                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/p-6.jpg') }}" alt=""></a>
                         </figure>
-                        <h4><a href="#">ASHIKAA</a></h4>
-                        <p>Deputy Head Prefect</p>
+                        <h4 class="text-uppercase"><a href="javascript:void(0);">S. ASHIKAA</a></h4>
+                        <p class="text-primary fw-bold">Deputy Head Prefect</p>
                     </div>
                 </div>
 
