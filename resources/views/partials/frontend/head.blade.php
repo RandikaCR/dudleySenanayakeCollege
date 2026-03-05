@@ -8,8 +8,8 @@
 <title>@yield('page_title') :: Dudley Senanayake College Official Website</title>
 
 @php
-    $metaTitle = !empty($metaTitle) ? $metaTitle : 'Dudley Senanayake College. Colombo 05';
-    $metaDescription = !empty($metaDescription) ? $metaDescription : '';
+    $metaTitle = !empty($metaTitle) ? $metaTitle : 'Dudley Senanayake College. Colombo 05 - Official Website';
+    $metaDescription = !empty($metaDescription) ? $metaDescription : 'Located in the heart of Colombo, within Narahenpita Village in the Salpiti Koralaya – Palle Division of the Western Province, Dudley Senanayake College has proudly served the community for 48 years. From its humble beginnings to its present status as a 1C Provincial Mixed School, our institution stands as a symbol of dedication, discipline, and continuous progress.';
     $metaKeywords = !empty($metaKeywords) ? $metaKeywords : '';
     $metaImage = !empty($metaImage) ? $metaImage : asset('assets/common/images/school-flag.jpg');
     $metaUrl = !empty($metaUrl) ? $metaUrl : url('');
