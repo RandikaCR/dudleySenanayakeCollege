@@ -54,7 +54,7 @@
                 <div class="section_title_one centred mb_60">
                     <h5>School Flag</h5>
                 </div>
-                <div class="about_left_image clearfix">
+                <div class="clearfix">
                     <figure class="about_image_four">
                         <img class="img-fluid w-100" src="{{ asset('assets/common/images/school-flag.jpg') }}" alt="">
                     </figure>
