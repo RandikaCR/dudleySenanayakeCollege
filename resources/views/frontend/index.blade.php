@@ -71,7 +71,7 @@
     <!-- End Feature Section Home Three -->
 
     <!-- About Section Home Three -->
-    <section class="about_section_home_three">
+    <section class="about_section_home_three" style="margin-bottom: 40px;">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-12">
@@ -84,8 +84,20 @@
                 <div class="col-xl-7 col-lg-12">
                     <div class="about_right_content">
                         <h5>Principal's Message</h5>
-                        <h2>Ven. Ulapane Sumangala</h2>
-                        <p>Located in the heart of Colombo, within Narahenpita Village in the Salpiti Koralaya – Palle Division of the Western Province, <span class="fw-bold">Dudley Senanayake College</span> has proudly served the community for 47 years. From its humble beginnings to its present status as a 1C Provincial Mixed School, our institution stands as a symbol of dedication, discipline, and continuous progress.</p>
+                        <h2>Venerable Rev. Ulapane Sumangala Thero</h2>
+                        <p class="mb-2">Dudley Senanayake College, Colombo 05, stands as a distinguished institution dedicated to providing quality education while nurturing discipline, wisdom, and moral integrity among its students. Since its establishment, the college has remained committed to shaping young minds into responsible citizens who contribute positively to society.</p>
+                        <p class="mb-2">At Dudley Senanayake College, we firmly believe that education extends beyond academic achievement. True education nurtures character, leadership, creativity, and compassion. We strive to create a supportive and inspiring learning environment where students are encouraged to think critically, explore their talents, and develop confidence in their abilities.</p>
+                    </div>
+                </div>
+                <div class="col-xl-12 col-lg-12">
+                    <div class="about_right_content">
+                        <p class="mb-2">Our college is a Grade 1C provincial school that provides education from Grade 1 to Grade 13, offering Arts and Commerce streams for Advanced Level studies. We are also proud to maintain a strong English Medium section from Grade 6 to Grade 11, enabling students to enhance their language proficiency and prepare themselves for broader academic and professional opportunities.</p>
+                        <p class="mb-2">To support modern education, the school is equipped with six Smart Boards, a fully functional computer laboratory with 60 computers, and 48 tablets, all of which are actively used by students for digital learning. These facilities help our students develop essential technological skills required in today’s rapidly evolving world.</p>
+                        <p class="mb-2">In addition to academic excellence, we place great emphasis on aesthetic education. Students have the opportunity to study Dancing, Art, Drama, and Music as aesthetic subjects, allowing them to develop creativity, cultural appreciation, and artistic expression.</p>
+                        <p class="mb-2">Sports play a vital role in the holistic development of our students. Dudley Senanayake College proudly maintains a strong sporting tradition with successful teams in several disciplines. Our rugby team, one of the most prominent in the school, is currently competing in the Dialogue Premier League Knockout Tournament. Furthermore, our boys’ and girls’ karate teams have achieved recognition at the national level. The college also has strong cricket and football teams, reflecting the enthusiasm and dedication of our students in sports.</p>
+                        <p class="mb-2">In this digital era, the launch of our official website marks another significant milestone in our journey. It serves as a valuable platform to connect students, parents, alumni, and well-wishers while sharing our achievements, events, and future aspirations.</p>
+                        <p class="mb-2">As a provincial school, we take great pride in the progress we have achieved and remain committed to continuously improving the quality of education we provide. I look forward with confidence to the continued growth of our college and the bright futures of the young individuals entrusted to our care.</p>
+                        <p>May all our students be guided by wisdom and noble values in their journey through life.</p>
 
                         <div class="link-btn"><a href="{{ url('contact') }}" class="button-style-four">Contact <i class="fa-solid fa-arrow-right"></i></a></div>
                     </div>
@@ -175,7 +187,7 @@
     <!-- End Funfact Section Home Three -->
 
     <!-- Our Studies Section Home Three -->
-    <section class="studies_section_home_three sec_padding_110">
+    <section class="studies_section_home_three sec_padding_110" style="padding-top: 40px;">
         <div class="container">
             <div class="section_title_one centred mb_60">
                 <h5>Academic & Non Academic</h5>
