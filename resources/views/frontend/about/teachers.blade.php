@@ -80,7 +80,7 @@
 
             <div class="row justify-content-center mb_70">
                 <div class="col-sm-12 mb-5 text-center">
-                    <h3 class="fw-bold text-primary">Assistant principal</h3>
+                    <h3 class="fw-bold text-primary">Assistant principals</h3>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
