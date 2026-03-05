@@ -239,7 +239,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-5">
                     <div class="career_feature_block centred">
                         <figure class="image_box">
-                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/user_square.jpg') }}" alt=""></a>
+                            <a href="javascript:void(0);"><img src="{{ asset('assets/common/images/uploads/t-5.jpg') }}" alt=""></a>
                         </figure>
                         <h4 class="text-uppercase"><a href="javascript:void(0);">UDUWARAGE RANGANI PIYUMIKA PERERA</a></h4>
                         <p class="text-primary fw-bold">BSc -Open University of Sri Lanka</p>
