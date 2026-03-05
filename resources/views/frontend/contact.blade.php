@@ -13,6 +13,22 @@
     @include('partials.frontend.breadcrumb')
 @endsection
 
+@section('css')
+
+    <style type="text/css">
+
+        .send-message{
+            width: 260px;
+        }
+
+        @media only screen and (max-width: 767px){
+            .send-message{
+                width: 100%;
+            }
+        }
+    </style>
+@endsection
+
 @section('content')
 
     <!-- Map Section -->
