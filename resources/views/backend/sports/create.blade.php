@@ -366,6 +366,9 @@
                         image:response,
                         id: $id,
                     },
+                    beforeSend: function ($jqXHR, $obj) {
+                        $('#image-status').html('Uploading....');
+                    },
                     success: function ($data) {
                         $('#image-status').html($data.status);
                         $img = appendImage($data);

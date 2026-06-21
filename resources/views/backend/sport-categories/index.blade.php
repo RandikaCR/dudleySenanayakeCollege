@@ -424,6 +424,9 @@
                         data: {
                             image:response,
                         },
+                        beforeSend: function ($jqXHR, $obj) {
+                            $('#image-status').html('Uploading....');
+                        },
                         success: function ($data) {
                             $('#uploaded_image').show();
                             $('#image-status').html($data.status);
