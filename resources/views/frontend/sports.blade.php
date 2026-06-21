@@ -33,7 +33,7 @@
                         <div class="programs_block_one centred mb_40">
                             <div class="inner_box">
                                 <figure class="image_box">
-                                    <a href="{{ url('sports/' . $sport->slug) }}"><img src="{{ asset('assets/common/images/' . $sport->image) }}" alt=""></a>
+                                    <a href="{{ url('sports/' . $sport->slug) }}"><img src="{{ asset('assets/common/images/uploads/' . $sport->image) }}" alt=""></a>
                                 </figure>
                                 <div class="lower_content">
                                     <div class="inner">

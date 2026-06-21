@@ -36,6 +36,7 @@ class SportCategoriesController extends Controller
             'sport_category' => $get->sport_category,
             'display_order' => $get->display_order,
             'slug' => $get->slug,
+            'image' => $get->image,
         ];
         return response()->json($out);
 
@@ -68,6 +69,7 @@ class SportCategoriesController extends Controller
             $save->slug = $req['slug'];
             $save->sport_category = $req['sport_category'];
             $save->display_order = !empty($req['display_order']) ? $req['display_order'] : 0;
+            $save->image = !empty($req['image']) ? $req['image'] : 'default-sport.jpg';
             $save->save();
             $status = 'success';
             $messageTitle = 'Success';
@@ -160,5 +162,25 @@ class SportCategoriesController extends Controller
             'is_exist' =>  $isExist,
             'slug' =>  $slug,
         ]);
+    }
+
+    public function imageUpload(Request $request){
+
+        $status = 'error';
+        $file_name = '';
+
+        if($request->ajax()){
+
+            $img = $this->commonImageUpload($request, 'uploads/');
+            $file_name = $img['file_name'];
+            $status = $img['status'];
+            $isPrimary = 0;
+
+            return response()->json([
+                'status' =>  $status,
+                'filename' =>  $file_name,
+            ]);
+
+        }
     }
 }

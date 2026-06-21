@@ -136,7 +136,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
         Route::post('/sport-categories/get', [BackendSportCategories::class, 'get'])->name('backend.sportCategories.get');
         Route::post('/sport-categories/status', [BackendSportCategories::class, 'status'])->name('backend.sportCategories.status');
         Route::post('/sport-categories/slug-generator', [BackendSportCategories::class, 'slugGenerator'])->name('backend.sportCategories.slugGenerator');
-
+        Route::post('/sport-categories/upload-image', [BackendSportCategories::class, 'imageUpload'])->name('backend.sportCategories.imageUpload');
 
     });
 

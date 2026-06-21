@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/dudleyse/public_html/
+    - export DEPLOYPATH=/home/dudleyse/public_html/dev.dudleysenanayakecollege.lk/
     - /bin/cp -R app $DEPLOYPATH
     - /bin/cp -R lang $DEPLOYPATH
     - /bin/cp -R public $DEPLOYPATH

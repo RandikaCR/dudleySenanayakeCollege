@@ -5,7 +5,7 @@
 @endsection
 
 @section('styles')
-
+    <link rel="stylesheet" href="{{ asset('assets/backend/libs/croppie/croppie.min.css') }}">
 @endsection
 
 @section('css')
@@ -114,12 +114,49 @@
                                 <input type="text" class="form-control" id="category-input" placeholder="Enter here....">
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4 mb-4">
                             <div>
                                 <label for="order-input" class="form-label">Display Order</label>
                                 <input type="text" class="form-control" id="order-input" placeholder="Enter here...." value="0">
                             </div>
                         </div>
+
+                        <div class="col-sm-12 mb-2">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="file">
+                                            <input type="file" accept="image/*" class="file-styled-primary" id="thumb_image" >
+                                        </label>
+                                    </div>
+                                    <div class="row" style="">
+                                        <div class="col-12" id="uploaded_thumb">
+                                            <div id="thumb_image_demo" style=""></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p class="text-success" id="image-status"></p>
+                                        </div>
+                                        <div class="col-md-4 text-right">
+                                            <span class="btn btn-info btn-sm thumb_crop">Apply</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row mt-4" id="uploaded_image" style="display: none;">
+                                <div class="col-md-12 mb-3">
+                                    <div class="d-flex align-items-center justify-content-center img-action img-border">
+                                        <img id="img" class="img-fluid img-bordered" src="">
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="image-input" value="">
+                        </div>
+
+
 
                         <div class="col-sm-12" id="form-alert-area">
 
@@ -144,10 +181,29 @@
 
 @section('scripts')
     <script src="{{ asset('assets/backend/packages/code.jquery.com/jquery-3.6.0.min.js') }}" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- croppie -->
+    <script src="{{ asset('assets/backend/libs/croppie/croppie.min.js') }}"></script>
 @endsection
 
 @section('custom_scripts')
     <script>
+
+        function appendImage($img){
+
+            $image = "{{ url('assets/common/images/uploads') }}/" + $img.filename;
+
+            $item = $('<div></div>').addClass('col-md-12 mb-3').attr('id', $img.id);
+
+            if($img.is_primary == 1){
+            }
+            else{
+                $('<div></div>').addClass('d-flex align-items-center justify-content-center img-action img-border')
+                    .append($('<img>').addClass('img-fluid img-bordered').attr('src', $image)).appendTo($item);
+            }
+
+            return $item;
+        }
+
         $(document).ready(function (){
 
 
@@ -161,8 +217,9 @@
                 $slug = $('#slug-input').val();
                 $category = $('#category-input').val();
                 $displayOrder = $('#order-input').val();
+                $image = $('#image-input').val();
 
-                if($category != ''){
+                if($category != '' && $image != ''){
                     $.ajax({
                         url: $url,
                         dataType: 'json',
@@ -170,6 +227,7 @@
                             "id": $id,
                             "slug": $slug,
                             "sport_category": $category,
+                            "image": $image,
                             "display_order": $displayOrder,
                             "_token": csrf_token()
                         },
@@ -183,6 +241,7 @@
                             $('#category-input').val('');
                             $('#order-input').val(0);
                             $('#slug-input').val('');
+                            $('#image-input').val('');
                             $('#form-alert-area').html('');
                             $alert = alertSuccess($res.message_text, $res.message_title);
                             $('#form-alert-area').html($alert);
@@ -198,7 +257,7 @@
                     });
                 }else{
                     $('#form-alert-area').html('');
-                    $alert = alertDanger('Category can not be empty!', 'Error');
+                    $alert = alertDanger('Category & Image can not be empty!', 'Error');
                     $('#form-alert-area').html($alert);
                     $($this).prop('disabled', false);
                 }
@@ -268,14 +327,22 @@
                         $('#category-input').val('');
                         $('#order-input').val(0);
                         $('#slug-input').val('');
+                        $('#image-input').val('');
+                        $('#uploaded_image').hide();
+
+
                     },
                     success: function ($res, $textStatus, $jqXHR) {
                         $('#edit-id').val($res.id);
                         $('#category-input').val($res.sport_category);
                         $('#order-input').val($res.display_order);
                         $('#slug-input').val($res.slug);
+                        $('#image-input').val($res.image);
                         $('#form-alert-area').html('');
                         $('.save-this-form').prop('disabled', false);
+
+                        $('#uploaded_image').show();
+                        $('#img').attr('src', "{{ url('assets/common/images/uploads') }}/" + $res.image);
 
                     },
                     error: function ($jqXHR, $textStatus, $errorThrown) {
@@ -307,6 +374,66 @@
 
                     }
                 });
+            });
+
+
+            $image_thumb = $('#thumb_image_demo').croppie({
+                enableExif: true,
+                viewport: {
+                    width:196,
+                    height:280,
+                    type:'square' //circle
+                },
+                boundary:{
+                    width:300,
+                    height:300
+                }
+            });
+
+            $('#thumb_image').on('change', function(){
+                var reader = new FileReader();
+                reader.onload = function (event) {
+                    $image_thumb.croppie('bind', {
+                        url: event.target.result
+                    });
+                };
+                reader.readAsDataURL(this.files[0]);
+                $('#uploaded_thumb').show();
+            });
+
+            $('.thumb_crop').click(function(event){
+
+                $image_thumb.croppie('result', {
+                    type: 'canvas',
+                    /*size: 'original'*/
+                    size: {
+                        width: 500,
+                        height: 714
+                    }
+                }).then(function(response){
+
+                    $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                    });
+
+                    $.ajax({
+                        url: "{{ route('backend.sportCategories.imageUpload') }}",
+                        type: "POST",
+                        data: {
+                            image:response,
+                        },
+                        success: function ($data) {
+                            $('#uploaded_image').show();
+                            $('#image-status').html($data.status);
+                            $img = appendImage($data);
+                            $('#image-input').val($data.filename);
+                            $('#uploaded_image').html($img);
+                        }
+                    });
+
+                })
             });
         });
     </script>
